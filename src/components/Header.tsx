@@ -12,9 +12,9 @@ const Header = () => {
     { label: "Como funciona", href: "#como-funciona" },
     { label: "Programas", href: "#programas" },
     { label: "Startups", href: "#startups" },
-    { label: "Histórico", href: "#historico" },
-    { label: "Equipe", href: "#equipe" },
     { label: "Notícias", href: "#noticias" },
+    {/* label: "Histórico", href: "#historico"*/ },
+    {/* label: "Equipe", href: "#equipe" */},
   ];
 
   return (

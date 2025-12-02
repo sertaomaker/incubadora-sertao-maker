@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
-import heroBanner from "@/assets/hero-banner.jpg";
+import { FileText, PenTool } from "lucide-react";
 import ModalEdital from "@/components/ModalEdital";
-
+import heroBanner from "@/assets/hero-banner.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       <ModalEdital />
 
       {/* Background Image */}
@@ -21,54 +22,46 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto pt-20 px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto">
           
-          {/* Main Heading */}
+          {/* Main Announcement */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            Transformamos ideias do sertão em{" "}
-            <span >soluções para o mundo</span>
+            Novo Edital Disponível!
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            A primeira incubadora de startups do Sertão Central brasileiro, conectando 
-            inovação, empreendedorismo e impacto social.
+          {/* Explanatory Text */}
+          <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
+            A Incubadora Sertão Maker abre inscrições para o novo ciclo de 
+            programas de incubação. Se você tem uma startup ou projeto inovador, 
+            esta é a oportunidade de receber mentoria especializada, acesso a 
+            rede de investidores e recursos para transformar sua ideia em 
+            soluções concretas com impacto social e econômico para o Sertão.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" variant="hero" className="group">
-              Conhecer Programas
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Button
+              size="lg"
+              variant="hero"
+              className="group flex items-center gap-2"
+              onClick={() => window.open('https://drive.google.com/file/d/1Z9I4vpB9fBLtq9DiOb3D2mozLWufo7sY/view?usp=sharing', '_blank')}
+            >
+              <FileText className="h-5 w-5" />
+              Ver Edital
             </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
-              Ver Startups
+            <Button
+              size="lg"
+              variant="outline"
+              className="bg-white/10 border-white/30 text-white hover:bg-white/20 flex items-center gap-2"
+              onClick={() => window.open ('https://programas.sebraestartups.com.br/in/sertaoinovador')}
+            >
+              <PenTool className="h-5 w-5" />
+              Inscrição
             </Button>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-8 border-t border-white/20">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">50+</div>
-              <div className="text-white/80">Startups Incubadas</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">15</div>
-              <div className="text-white/80">Mentores Especialistas</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">3</div>
-              <div className="text-white/80">Anos de Experiência</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white">R$ 2M+</div>
-              <div className="text-white/80">Investimentos Captados</div>
-            </div>
           </div>
         </div>
       </div>
-
     </section>
   );
 };
