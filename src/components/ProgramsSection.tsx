@@ -27,7 +27,7 @@ const ProgramsSection = () => {
       subtitle: "Para startups formalizadas",
       description: "Programa estruturado para startups já constituídas que buscam crescimento e estruturação do negócio.",
       duration: "6-12 meses",
-      participants: "Até 15 vagas",
+      participants: "Até 25 vagas",
       focus: "Crescimento",
       features: [
         "Mentoria especializada",
@@ -125,7 +125,7 @@ const ProgramsSection = () => {
               </div>
 
               {/* CTA Button */}
-              <Button 
+              <Button onClick={() => window.open ('https://programas.sebraestartups.com.br/in/sertaoinovador')}
                 variant="cta" 
                 className="bg-primary w-full group-hover:shadow-soft transition-all  duration-300 hover:bg-primary/90 text-primary-foreground flex items-center justify-center"
               >
@@ -136,7 +136,7 @@ const ProgramsSection = () => {
           ))}
         </div>
 
-        {/* Additional Info */}
+        {/*  
         <div className="mt-16 text-center">
           <div className="inline-block bg-gradient-card rounded-2xl p-8 border border-border/50">
             <h3 className="text-xl font-semibold text-foreground mb-4">
@@ -150,6 +150,10 @@ const ProgramsSection = () => {
             </Button>
           </div>
         </div>
+        
+        
+        */}
+        
       </div>
     </section>
   );
