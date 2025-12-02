@@ -1,15 +1,32 @@
 import { Button } from "@/components/ui/button";
-import { FileText, PenTool } from "lucide-react";
-import ModalEdital from "@/components/ModalEdital";
+import { FileText, PenTool, CheckCircle } from "lucide-react";
+import { Card } from "./ui/card";
+
 import heroBanner from "@/assets/hero-banner.jpg";
 
 const HeroSection = () => {
+  const beneficios = [
+    "Crédito AWS 5 mil dólares",
+    "Crédito Zoho - até 30 mil reais",
+    "Mentorias",
+    "Ajuda na captação de recursos / escrita de editais",
+    "Networking",
+    "Cursos Cisco, Huawei, PUC Rio (Programação, IA e etc)"
+  ];
+
+  const destaques = [
+    "Diagnóstico e plano individual de cada startup",
+    "Mentorias com uma rede de mentores de todo o Brasil",
+    "Experiência na captação de recursos",
+    "Incubação cruzada com incubadora da Europa"
+  ];
+
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative flex flex-col items-center justify-center overflow-hidden"
     >
-      <ModalEdital />
+  
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -21,22 +38,17 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-sertao-orange/60"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-3xl mx-auto">
-          
-          {/* Main Announcement */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+      {/* Main Content */}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+        <div className="max-w-3xl mx-auto mb-8">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
             Novo Edital Disponível!
           </h1>
-
-          {/* Explanatory Text */}
-          <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-            A Incubadora Sertão Maker abre inscrições para o novo ciclo de 
-            programas de incubação. Se você tem uma startup ou projeto inovador, 
-            esta é a oportunidade de receber mentoria especializada, acesso a 
-            rede de investidores e recursos para transformar sua ideia em 
-            soluções concretas com impacto social e econômico para o Sertão.
+          <p className="text-base sm:text-lg text-white/90 mb-6 leading-relaxed">
+            A Incubadora Sertão Maker abre inscrições para o novo ciclo de programas de incubação. 
+            Se você tem uma startup ou projeto inovador, esta é a oportunidade de receber mentoria especializada, 
+            acesso a rede de investidores e recursos para transformar sua ideia em soluções concretas 
+            com impacto social e econômico para o Sertão.
           </p>
 
           {/* CTA Buttons */}
@@ -54,13 +66,47 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               className="bg-white/10 border-white/30 text-white hover:bg-white/20 flex items-center gap-2"
-              onClick={() => window.open ('https://programas.sebraestartups.com.br/in/sertaoinovador')}
+              onClick={() => window.open('https://programas.sebraestartups.com.br/in/sertaoinovador')}
             >
               <PenTool className="h-5 w-5" />
               Inscrição
             </Button>
           </div>
         </div>
+
+        {/* Benefícios */}
+<div className="max-w-5xl mx-auto mb-10 text-left">
+  <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4 text-center">Benefícios</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {beneficios.map((item, idx) => (
+      <Card
+        key={idx}
+        className="flex items-start gap-3 p-4 bg-white/20 border border-white/30 rounded-2xl shadow-soft hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+      >
+        <CheckCircle className="text-primary h-5 w-5 flex-shrink-0 mt-1" />
+        <p className="text-white text-sm leading-snug">{item}</p>
+      </Card>
+    ))}
+  </div>
+</div>
+
+{/* Destaques */}
+<div className="max-w-5xl mx-auto text-left">
+  <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4 text-center">Destaques do Programa</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    {destaques.map((item, idx) => (
+      <Card
+        key={idx}
+        className="flex items-start gap-3 p-4 bg-white/20 border border-white/30 rounded-2xl shadow-soft hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+      >
+        <CheckCircle className="text-primary h-5 w-5 flex-shrink-0 mt-1" />
+        <p className="text-white text-sm leading-snug">{item}</p>
+      </Card>
+    ))}
+  </div>
+</div>
+
+
       </div>
     </section>
   );
