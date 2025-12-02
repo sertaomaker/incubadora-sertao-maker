@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import ISMLogo from "@/assets/img/incubadoraLogos/ISM_Logo1.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,9 +23,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-xl font-bold text-primary">
-              Sertão Maker
-            </h1>
+            <div className="flex items-center">
+              <a href="#inicio"><img src={ISMLogo} alt="Sertão Maker Logo" className="h-10 w-auto" /></a>
+            </div>
+
           </div>
 
           {/* Desktop Menu */}
