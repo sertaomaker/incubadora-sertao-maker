@@ -11,64 +11,55 @@ import workshopInovacaoImage from "@/assets/news/workshop-inovacao.jpg";
 import agtechStartupImage from "@/assets/news/agtech-startup.jpg";
 import edtechPlatformImage from "@/assets/news/edtech-platform.jpg";
 
+import centelha from "@/assets/news/centelha.png";
+import  sebraeStartups from "@/assets/news/sebraeStartups.png"
+import competSolucoes from "@/assets/news/Compet-Soluções.png"
+import desafiosSociais from "@/assets/news/desafiosSociais.jpeg"
+
 const NewsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("todas");
 
   const news = [
     {
-      type: "noticia",
-      title: "Sertão Maker anuncia parceria com Sebrae para expansão de programas",
-      excerpt: "Nova parceria visa ampliar o alcance dos programas de incubação para mais 50 municípios do Sertão Central.",
-      date: "15 Jan 2024",
-      readTime: "3 min",
-      category: "Parcerias",
-      image: partnershipSebraeImage
-    },
-    {
-      type: "evento",
-      title: "Demo Day 2024 - Apresentação das Startups Incubadas",
-      excerpt: "Evento presencial onde as startups apresentam seus projetos para investidores e parceiros.",
-      date: "25 Mar 2024",
-      readTime: "3 horas",
-      category: "Eventos",
-      image: demoDayImage
+      type: "processo",
+      title: "Edital Aberto: Centelha",
+      excerpt: "O Programa Centelha apoia inovadores com capacitações, recursos e suporte para transformar ideias em negócios.",
+      date: "01 Dez 2025",
+      readTime: "10 min",
+      category: "Editais",
+      image: centelha,
+      link: "https://www.programacentelha.com.br"
     },
     {
       type: "processo",
-      title: "Edital Aberto: Pré-incubação 2024.1",
-      excerpt: "Inscrições abertas para o programa de pré-incubação. Prazo final: 20 de fevereiro.",
-      date: "Até 20 Fev",
-      readTime: "Candidatura",
+      title: "Edital Aberto: Inova Caatinga",
+      excerpt: "O Inova Caatinga é um programa que acelera projetos de bioeconomia, buscando soluções sustentáveis para o bioma.",
+      date: "01 Dez 2025",
+      readTime: "10 min",
       category: "Editais",
-      image: preIncubacaoImage
+      image: sebraeStartups,
+      link: "https://programas.sebraestartups.com.br/in/inovacaatinga"
+    },
+    {
+      type: "processo",
+      title: "Edital Aberto: Compet Soluções",
+      excerpt: "Governo lança nova edição de R$ 2,24 milhões para apoiar empresas em projetos inovadores",
+      date: "Até 26 Jev",
+      readTime: "10 min",
+      category: "Editais",
+      image: desafiosSociais,
+      link: "https://www.facepe.br/compet-solucoes-governo-lanca-nova-edicao-de-r-224-milhoes-para-apoiar-empresas-em-projetos-inovadores/"
     },
     {
       type: "evento",
       title: "Workshop de Inovação no Sertão Central",
-      excerpt: "Capacitação gratuita em metodologias de inovação e design thinking para empreendedores locais.",
-      date: "10 Fev 2024",
-      readTime: "6 horas",
-      category: "Capacitação",
-      image: workshopInovacaoImage
+      excerpt: "A iniciativa de PE apoia startups com projetos inovadores em colaboração com ICTs, visando soluções sociais em Pernambuco. (15 palavras)",
+      date: "01 Dez 2025",
+      readTime: "15 min",
+      category: "Editais",
+      image: workshopInovacaoImage,
+      link: "https://www.facepe.br/facepe-prorroga-o-prazo-de-submissoes-do-edital-332025-inovacao-aberta-para-desafios-sociais/"
     },
-    {
-      type: "noticia",
-      title: "Startup de AgTech recebe investimento de R$ 500 mil",
-      excerpt: "Empresa incubada desenvolve solução para otimização do uso da água na agricultura do sertão.",
-      date: "28 Jan 2024",
-      readTime: "4 min",
-      category: "Investimentos",
-      image: agtechStartupImage
-    },
-    {
-      type: "noticia",
-      title: "Plataforma de EdTech conecta estudantes rurais",
-      excerpt: "Solução desenvolvida por startup incubada já atende mais de 2.000 estudantes da região.",
-      date: "05 Fev 2024",
-      readTime: "5 min",
-      category: "Tecnologia",
-      image: edtechPlatformImage
-    }
   ];
 
   const categories = ["todas", "Parcerias", "Eventos", "Editais", "Capacitação", "Investimentos", "Tecnologia"];
@@ -150,44 +141,47 @@ const NewsSection = () => {
               
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                <Badge 
-                  variant="outline" 
-                  className={`${getTypeColor(item.type)} flex items-center gap-1`}
+                  <Badge 
+                    variant="outline" 
+                    className={`${getTypeColor(item.type)} flex items-center gap-1`}
+                  >
+                    {getTypeIcon(item.type)}
+                    {getTypeLabel(item.type)}
+                  </Badge>
+                  <Badge variant="secondary" className="text-xs">
+                    {item.category}
+                  </Badge>
+                </div>
+
+                <h3 className="text-xl font-semibold text-foreground mb-3 leading-tight">
+                  {item.title}
+                </h3>
+
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {item.excerpt}
+                </p>
+
+                <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>{item.date}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4" />
+                    <span>{item.readTime}</span>
+                  </div>
+                </div>
+
+                {/* Botão com link único */}
+                <a 
+                  href={item.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium rounded-md border border-transparent bg-background text-foreground hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
-                  {getTypeIcon(item.type)}
-                  {getTypeLabel(item.type)}
-                </Badge>
-                <Badge variant="secondary" className="text-xs">
-                  {item.category}
-                </Badge>
-              </div>
-
-              <h3 className="text-xl font-semibold text-foreground mb-3 leading-tight">
-                {item.title}
-              </h3>
-
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                {item.excerpt}
-              </p>
-
-              <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span>{item.date}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
-                  <span>{item.readTime}</span>
-                </div>
-              </div>
-
-              <Button 
-                variant="ghost" 
-                className="w-full group-hover:bg-primary/10 group-hover:text-primary transition-all duration-300"
-              >
-                {item.type === "processo" ? "Ver Edital" : "Ler Mais"}
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                  {item.type === "processo" ? "Ver Edital" : "Ler Mais"}
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
               </div>
             </Card>
           ))}
