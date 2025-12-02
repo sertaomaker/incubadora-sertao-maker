@@ -1,36 +1,48 @@
 import { Card } from "@/components/ui/card";
-import { Lightbulb, Users, Wrench, CheckCircle, Rocket } from "lucide-react";
+import { AlertCircle, Users, CheckCircle, Lightbulb, Wrench, Target, Calendar } from "lucide-react";
 
 const ProcessSection = () => {
   const steps = [
     {
-      icon: Lightbulb,
-      title: "Ideação",
-      description: "Identificação e validação inicial de ideias inovadoras com potencial de impacto.",
+      icon: AlertCircle,
+      title: "Identificação do Problema",
+      description: "Mapeamento de dores e necessidades do mercado para definir desafios relevantes.",
       color: "text-sertao-blue"
     },
     {
       icon: Users,
-      title: "Mentorias e Treinamentos",
-      description: "Acesso a especialistas e workshops sobre modelo de negócio, marketing e tecnologia.",
-      color: "text-sertao-blue"
-    },
-    {
-      icon: Wrench,
-      title: "Prototipagem",
-      description: "Desenvolvimento de protótipos e MVPs com suporte técnico especializado.",
+      title: "Identificação segmento de clientes",
+      description: "Definição do público-alvo e segmentação para entender quem será impactado.",
       color: "text-sertao-blue"
     },
     {
       icon: CheckCircle,
-      title: "Validação de Mercado",
-      description: "Testes com usuários reais e validação do produto-mercado fit.",
+      title: "Validação Problema e Cliente",
+      description: "Testes e entrevistas para validar se o problema existe e se o cliente se identifica.",
       color: "text-sertao-blue"
     },
     {
-      icon: Rocket,
-      title: "Incubação ou Aceleração",
-      description: "Programa estruturado para crescimento e captação de investimentos.",
+      icon: Lightbulb,
+      title: "Ideação",
+      description: "Geração de soluções inovadoras para os problemas validados.",
+      color: "text-sertao-blue"
+    },
+    {
+      icon: Wrench,
+      title: "Prototipação",
+      description: "Desenvolvimento de protótipos ou MVPs para testar as ideias de forma prática.",
+      color: "text-sertao-blue"
+    },
+    {
+      icon: Target,
+      title: "Validação da Solução",
+      description: "Testes com usuários e métricas para garantir que a solução atende ao problema.",
+      color: "text-sertao-blue"
+    },
+    {
+      icon: Calendar,
+      title: "Planejamento",
+      description: "Organização de próximos passos e estratégia de crescimento da startup.",
       color: "text-sertao-blue"
     }
   ];
@@ -49,19 +61,22 @@ const ProcessSection = () => {
 
         <div className="relative">
           {/* Process Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-7 gap-8 items-stretch">
             {steps.map((step, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative h-full flex flex-col">
                 {/* Connection Line */}
                 {index < steps.length - 1 && (
                   <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-border transform translate-x-4 -translate-y-1/2 z-0"></div>
                 )}
                 
-                <Card className="relative z-10 p-6 text-center bg-background border-border/50 hover:shadow-soft transition-all duration-300">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Card className="relative z-10 p-6 text-center bg-background border-border/50 hover:shadow-soft transition-all duration-300 h-full flex flex-col">
+                  {/* Ícone */}
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 flex-shrink-0">
                     <step.icon className={`w-8 h-8 ${step.color}`} />
                   </div>
-                  <div className="mb-3">
+
+                  {/* Título */}
+                  <div className="mb-3 flex-shrink-0">
                     <div className="text-sm font-medium text-muted-foreground mb-1">
                       Etapa {index + 1}
                     </div>
@@ -69,7 +84,9 @@ const ProcessSection = () => {
                       {step.title}
                     </h3>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+
+                  {/* Descrição */}
+                  <p className="text-sm text-muted-foreground flex-1">
                     {step.description}
                   </p>
                 </Card>

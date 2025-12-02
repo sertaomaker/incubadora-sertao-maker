@@ -511,22 +511,6 @@ const StartupsSection = () => {
             </Button>
           </div>
         )}
-
-        {/* CTA */}
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-gradient-card rounded-2xl p-8 border border-border/50">
-            <h3 className="text-xl font-semibold text-foreground mb-4">
-              Quer fazer parte desta comunidade?
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Inscreva sua startup em nossos programas e transforme sua ideia em
-              realidade
-            </p>
-            <Button variant="cta" size="lg">
-              Inscrever Startup
-            </Button>
-          </div>
-        </div>
       </div>
 
       {selectedStartup && (
