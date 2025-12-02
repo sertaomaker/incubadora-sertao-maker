@@ -51,9 +51,9 @@ const NewsSection = () => {
       link: "https://www.facepe.br/compet-solucoes-governo-lanca-nova-edicao-de-r-224-milhoes-para-apoiar-empresas-em-projetos-inovadores/"
     },
     {
-      type: "evento",
-      title: "Workshop de Inovação no Sertão Central",
-      excerpt: "A iniciativa de PE apoia startups com projetos inovadores em colaboração com ICTs, visando soluções sociais em Pernambuco. (15 palavras)",
+      type: "processo",
+      title: "Edital Aberto: Inovação Aberta para Desafios Sociais",
+      excerpt: "A iniciativa de PE apoia startups com projetos inovadores em colaboração com ICTs, visando soluções sociais em Pernambuco.",
       date: "01 Dez 2025",
       readTime: "15 min",
       category: "Editais",
