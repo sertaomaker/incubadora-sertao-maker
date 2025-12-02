@@ -44,8 +44,8 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Button variant="cta" size="sm">
-              Candidatar-se
+            <Button onClick={()=> window.open("https://chat.whatsapp.com/Db4BlZX087kEM3wPYhsRsj?mode=ems_share_c")} variant="cta" size="sm">
+              Entrar na Comunidade
             </Button>
           </div>
 
