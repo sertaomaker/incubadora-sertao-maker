@@ -6,21 +6,13 @@ const Footer = () => {
     { label: "Sobre", href: "#sobre" },
     { label: "Programas", href: "#programas" },
     { label: "Startups", href: "#startups" },
-    { label: "Equipe", href: "#equipe" },
+    { label: "Noticias e Editais", href: "#noticias" },
   ];
 
   const programs = [
     { label: "Pré-incubação", href: "#programas" },
     { label: "Incubação", href: "#programas" },
-    { label: "Mentorias", href: "#programas" },
-    { label: "Aceleração", href: "#programas" },
-  ];
-
-  const resources = [
-    { label: "Blog", href: "#" },
-    { label: "Recursos", href: "#" },
-    { label: "Eventos", href: "#noticias" },
-    { label: "Contato", href: "#contato" },
+    { label: "Mentorias", href: "#programas" }
   ];
 
   return (
@@ -34,6 +26,7 @@ const Footer = () => {
               Transformando ideias do Sertão Central em soluções para o mundo através 
               de inovação, empreendedorismo e impacto social.
             </p>
+           { /*
             <div className="flex space-x-3">
               <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
                 <Facebook className="w-4 h-4" />
@@ -48,6 +41,7 @@ const Footer = () => {
                 <Twitter className="w-4 h-4" />
               </Button>
             </div>
+            */}
           </div>
 
           {/* Quick Links */}
@@ -91,7 +85,7 @@ const Footer = () => {
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
                 <span className="text-primary-foreground/80 text-sm">
-                  Petrolina, PE - Brasil
+                  Salgueiro, PE - Brasil
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -100,16 +94,12 @@ const Footer = () => {
                   contato@sertaomaker.com
                 </span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                <span className="text-primary-foreground/80 text-sm">
-                  (87) 9999-0000
-                </span>
-              </div>
             </div>
+            {/*
             <Button variant="hero" size="sm" className="mt-4">
               Entre em Contato
             </Button>
+            */}
           </div>
         </div>
 
@@ -117,16 +107,16 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-primary-foreground/60 text-sm">
-              © 2024 Incubadora Sertão Maker. Todos os direitos reservados.
+              © 2025 Sertão Maker. Todos os direitos reservados.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+           {/* <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors">
                 Política de Privacidade
               </a>
               <a href="#" className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-colors">
                 Termos de Uso
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
