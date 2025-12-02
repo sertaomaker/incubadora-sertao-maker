@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useState, useRef, useEffect } from "react";
 import { ExternalLink, Filter, X } from "lucide-react";
-import { Link } from "react-router-dom";
+
 
 import { startupDescription } from "./startupDescription";
 import nossaRocaLogo from "../assets/img/startupLogos/nossa-roca.jpeg";
@@ -15,6 +15,7 @@ import hubEduLogo from "../assets/img/startupLogos/hubedu.jpeg";
 import neureonLogo from "../assets/img/startupLogos/neureon.jpeg";
 import vitallyLogo from "../assets/img/startupLogos/vitally.jpeg";
 import zeatechLogo from "../assets/img/startupLogos/zeatech.jpeg";
+
 
 const StartupsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("todas");

@@ -18,8 +18,8 @@ const Index = () => {
       <ProcessSection />
       <ProgramsSection />
       <StartupsSection />
-      <ProgramHistory />
-      <TeamSection />
+      {/*<ProgramHistory />*/}
+      {/*<TeamSection />*/}
       <NewsSection />
       <Footer />
     </div>
