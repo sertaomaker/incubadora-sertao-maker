@@ -41,7 +41,7 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
         <div className="max-w-3xl mx-auto mb-8">
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 mt-10 leading-tight">
             Novo Edital Disponível!
           </h1>
           <p className="text-base sm:text-lg text-white/90 mb-6 leading-relaxed">
