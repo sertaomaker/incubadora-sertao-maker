@@ -65,7 +65,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="bg-white/10 border-white/30 text-white hover:bg-white/20 flex items-center gap-2"
+              className="bg-white/90 border-white/30 text-primary hover:bg-white/20 flex items-center gap-2"
               onClick={() => window.open('https://programas.sebraestartups.com.br/in/sertaoinovador')}
             >
               <PenTool className="h-5 w-5" />
@@ -73,6 +73,16 @@ const HeroSection = () => {
             </Button>
           </div>
         </div>
+
+    {/* Announcement Box */}
+<div className="mt-8">
+  <div className="bg-white/80 mb-4 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 inline-flex items-center justify-center mx-auto shadow-lg">
+    <p className="text-orange-700 text-lg sm:text-xl font-bold tracking-wide">
+      Inscrições de <span className="text-primary">02/12</span> até <span className="text-primary">23/12</span>!
+    </p>
+  </div>
+</div>
+
 
         {/* Benefícios */}
 <div className="max-w-5xl mx-auto mb-10 text-left">
