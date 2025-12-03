@@ -65,7 +65,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="bg-white/90 border-white/30 text-primary hover:bg-white/20 flex items-center gap-2"
+              className="bg-white/20 text-white hover:bg-white/90 border-white/30 hover:text-primary  flex items-center gap-2"
               onClick={() => window.open('https://programas.sebraestartups.com.br/in/sertaoinovador')}
             >
               <PenTool className="h-5 w-5" />
