@@ -53,12 +53,12 @@ const StartupsSection = () => {
 
   const startups = [
     { id: 1, name: "Nossa Roça", category: "agricultura", description: startupDescription.nossaRoca, stage: "Incubada", logo: nossaRocaLogo, website: "#" },
-    { id: 2, name: "Aromas do Vale", category: "agricultura", description: startupDescription.aromasDoVale, stage: "Acelerada", logo: noImageLogo, website: "#" },
-    { id: 3, name: "ArtEsfera", category: "artes_e_cultura", description: startupDescription.ArtEsfera, stage: "Pré-incubada", logo: noImageLogo, website: "#" },
+    { id: 2, name: "Aromas do Vale", category: "agricultura", description: startupDescription.aromasDoVale, stage: "Incubada", logo: noImageLogo, website: "#" },
+    { id: 3, name: "ArtEsfera", category: "artes_e_cultura", description: startupDescription.ArtEsfera, stage: "Incubada", logo: noImageLogo, website: "#" },
     { id: 4, name: "Zilly", category: "construcao_civil", description: startupDescription.zilly, stage: "Incubada", logo: ZillyLogo, website: "#" },
-    { id: 5, name: "Hibuddy", category: "educacao", description: startupDescription.hibuddy, stage: "Acelerada", logo: noImageLogo, website: "#" },
+    { id: 5, name: "Hibuddy", category: "educacao", description: startupDescription.hibuddy, stage: "Incubada", logo: noImageLogo, website: "#" },
     { id: 6, name: "Desvenda", category: "turismo", description: startupDescription.desvenda, stage: "Incubada", logo: noImageLogo, website: "#" },
-    { id: 7, name: "SERA462", category: "educacao", description: startupDescription.sera462, stage: "Pré-incubada", logo: SERA462Logo, website: "#" },
+    { id: 7, name: "SERA462", category: "educacao", description: startupDescription.sera462, stage: "Incubada", logo: SERA462Logo, website: "#" },
     { id: 8, name: "Rolê App", category: "turismo", description: startupDescription.roleApp, stage: "Incubada", logo: noImageLogo, website: "#" },
     { id: 9, name: "Ser Fit", category: "alimentos", description: startupDescription.serFit, stage: "Incubada", logo: noImageLogo, website: "#" },
     { id: 10, name: "Lamparina.Social", category: "educacao", description: startupDescription.lamparinaSocial, stage: "Incubada", logo: noImageLogo, website: "#" },
