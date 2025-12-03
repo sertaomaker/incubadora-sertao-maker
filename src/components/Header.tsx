@@ -76,8 +76,8 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button variant="cta" size="sm" className="bg-primary w-full">
-                  Candidatar-se
+                <Button onClick={()=> window.open("https://chat.whatsapp.com/Db4BlZX087kEM3wPYhsRsj?mode=ems_share_c")} variant="cta" size="sm">
+                    Entrar na Comunidade
                 </Button>
               </div>
             </div>
