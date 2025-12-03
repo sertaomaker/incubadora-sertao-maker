@@ -91,9 +91,9 @@ const HeroSection = () => {
     {beneficios.map((item, idx) => (
       <Card
         key={idx}
-        className="flex items-start gap-3 p-4 bg-white/20 border border-white/30 rounded-2xl shadow-soft hover:-translate-y-1  font-semibold font-semibold hover:shadow-lg transition-all duration-300"
+        className="flex items-center backdrop-blur-md gap-3 p-4 bg-white/20 border border-white/30 rounded-2xl shadow-soft hover:-translate-y-1  font-semibold font-semibold hover:shadow-lg transition-all duration-300"
       >
-        <CheckCircle className="text-primary h-5 w-5 flex-shrink-0 mt-1" />
+        <CheckCircle className="flex align-center text-orange-400 h-5 w-5 flex-shrink-0 mt-1" />
         <p className="text-white text-sm leading-snug">{item}</p>
       </Card>
     ))}
@@ -107,9 +107,9 @@ const HeroSection = () => {
     {destaques.map((item, idx) => (
       <Card
         key={idx}
-        className="flex items-start gap-3 p-4 bg-white/20 border border-white/30 rounded-2xl shadow-soft hover:-translate-y-1 font-semibold  hover:shadow-lg transition-all duration-300"
+        className="flex items-center backdrop-blur-md gap-3 p-4 bg-white/20 border border-white/30 rounded-2xl shadow-soft hover:-translate-y-1 font-semibold  hover:shadow-lg transition-all duration-300"
       >
-        <CheckCircle className="text-primary h-5 w-5 flex-shrink-0 mt-1" />
+        <CheckCircle className="text-orange-400 h-5 w-5 flex-shrink-0 mt-1" />
         <p className="text-white text-sm leading-snug">{item}</p>
       </Card>
     ))}
