@@ -24,7 +24,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex items-center">
-              <a href="#inicio"><img src={ISMLogo} alt="Sertão Maker Logo" className="h-10 w-auto" /></a>
+              <a href="https://www.sertaomaker.com.br/"><img src={ISMLogo} alt="Sertão Maker Logo" className="h-10 w-auto" /></a>
             </div>
 
           </div>
