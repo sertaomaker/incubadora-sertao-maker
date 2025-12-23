@@ -87,7 +87,7 @@ const HeroSection = () => {
     "
   >
     <p className="text-orange-700  text-base sm:text-lg font-bold text-center ">
-      ⏰ Inscrições abertas:{" "}
+      ⏰ Inscrições de: {" "}
       <span className="text-primary">02/12/2025</span> a{" "}
       <span className="text-primary">04/01/2026</span>
     </p>
