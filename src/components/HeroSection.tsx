@@ -75,29 +75,31 @@ const HeroSection = () => {
         </div>
 
     {/* Announcement Box */}
-<div className="mb-6 flex justify-center px-4">
-  <div
-    className="
-      bg-white/70
-      backdrop-blur-md
-      border border-orange-400/40
-      rounded-2xl sm:rounded-full
-      px-6 sm:px-8
-      py-3
-      shadow-md
-      max-w-full
-    "
-  >
-    <p className="text-orange-700 text-sm sm:text-lg font-bold text-center leading-snug">
-      ⏰ Inscrições abertas:
-      <span className="block sm:inline">
-        {" "}
-        <span className="text-primary">02/12/25</span> a{" "}
-        <span className="text-primary">04/01/26</span>
-      </span>
-    </p>
+  <div className="mb-6 flex justify-center px-4">
+    <div
+      className="
+        bg-white/70
+        backdrop-blur-md
+        border border-orange-400/40
+        rounded-2xl sm:rounded-full
+        px-6 sm:px-8
+        py-3
+        ring-2 ring-orange-400/50
+        animate-pulse
+        shadow-lg
+        max-w-full
+      "
+    >
+      <p className="text-orange-700 text-sm sm:text-lg font-bold text-center leading-snug">
+        ⏰ Inscrições abertas:
+        <span className="block sm:inline">
+          {" "}
+          <span className="text-primary">02/12/25</span> a{" "}
+          <span className="text-primary">04/01/26</span>
+        </span>
+      </p>
+    </div>
   </div>
-</div>
 
 
         {/* Benefícios */}
