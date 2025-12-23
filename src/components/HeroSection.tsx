@@ -36,7 +36,7 @@ const HeroSection = () => {
           className="w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-black/40"></div>
 
       </div>
 
@@ -71,6 +71,7 @@ const HeroSection = () => {
 >
   O <strong>Sertão Maker</strong> é uma incubadora que apoia startups e projetos
   inovadores desde a ideia até a prototipação e entrada no mercado.
+  Estão abertas as inscrições para o novo edital da Incubadora Sertão Maker, com mentoria, infraestrutura e apoio ao desenvolvimento de startups inovadoras.
 </p>
 
 <p
@@ -119,7 +120,7 @@ const HeroSection = () => {
               size="lg"
               variant="hero"
               className="group flex items-center gap-2"
-              onClick={() => window.open('https://drive.google.com/file/d/1Z9I4vpB9fBLtq9DiOb3D2mozLWufo7sY/view?usp=sharing', '_blank')}
+              onClick={() => window.open('https://ifsertaope.edu.br/editais/edital-n-o-191-2025/', '_blank')}
             >
               <FileText className="h-5 w-5" />
               Ver Edital
