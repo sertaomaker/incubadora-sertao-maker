@@ -57,6 +57,61 @@ const AboutSection = () => {
           ))}
         </div>
 
+
+  {/* Infraestrutura */}
+<div className="mt-20">
+  <div className="max-w-4xl mx-auto text-center mb-12">
+    <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+      Infraestrutura de Apoio
+    </h3>
+    <p className="text-lg text-muted-foreground">
+      As startups incubadas têm acesso à infraestrutura completa dos 
+      <strong className="text-foreground"> laboratórios do Centro de Inovação Maker</strong>, 
+      pensada para prototipagem, testes e produção de conteúdo.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <Card className="p-6 text-center bg-gradient-card border-border/50">
+      <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+        <Lightbulb className="w-7 h-7 text-primary" />
+      </div>
+      <h4 className="text-lg font-semibold text-foreground mb-2">
+        Laboratório de IoT
+      </h4>
+      <p className="text-muted-foreground">
+        Espaço equipado para desenvolvimento e testes de soluções em Internet das Coisas,
+        automação e hardware.
+      </p>
+    </Card>
+
+    <Card className="p-6 text-center bg-gradient-card border-border/50">
+      <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+        <TrendingUp className="w-7 h-7 text-primary" />
+      </div>
+      <h4 className="text-lg font-semibold text-foreground mb-2">
+        Impressoras 3D
+      </h4>
+      <p className="text-muted-foreground">
+        Prototipagem rápida de produtos físicos, peças funcionais e validação de ideias.
+      </p>
+    </Card>
+
+    <Card className="p-6 text-center bg-gradient-card border-border/50">
+      <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+        <Users className="w-7 h-7 text-primary" />
+      </div>
+      <h4 className="text-lg font-semibold text-foreground mb-2">
+        Sala de Podcast
+      </h4>
+      <p className="text-muted-foreground">
+        Ambiente estruturado para gravação de podcasts, vídeos institucionais
+        e produção de conteúdo das startups.
+      </p>
+    </Card>
+  </div>
+</div>
+      
         {/*CTA*/}
         
         <div className="mt-16 text-center">
