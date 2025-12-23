@@ -35,47 +35,59 @@ const HeroSection = () => {
           alt="Sertão brasileiro com elementos de inovação"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-sertao-orange/60"></div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-black/20"></div>
+
       </div>
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
         <div className="max-w-3xl mx-auto mb-8">
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 mt-10 leading-tight">
-            Novo Edital Disponível!
-          </h1>
-          <p className="text-base sm:text-lg text-white/90 mb-6 leading-relaxed">
-            A Incubadora Sertão Maker abre inscrições para o novo ciclo de programas de incubação. 
-            Se você tem uma startup ou projeto inovador, esta é a oportunidade de receber mentoria especializada, 
-            acesso a rede de investidores e recursos para transformar sua ideia em soluções concretas 
-            com impacto social e econômico para o Sertão.
-          </p>
+         <h1
+  className="
+    text-2xl
+    sm:text-4xl
+    lg:text-5xl
+    font-bold
+    text-white
+    mb-4
+    mt-10
+    leading-snug
+  "
+>
+  Transformando ideias em protótipos no coração do Sertão
+</h1>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              variant="hero"
-              className="group flex items-center gap-2"
-              onClick={() => window.open('https://drive.google.com/file/d/1Z9I4vpB9fBLtq9DiOb3D2mozLWufo7sY/view?usp=sharing', '_blank')}
-            >
-              <FileText className="h-5 w-5" />
-              Ver Edital
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-white/20 text-white hover:bg-white/90 border-white/30 hover:text-primary  flex items-center gap-2"
-              onClick={() => window.open('https://programas.sebraestartups.com.br/in/sertaoinovador', '_blank')}
-            >
-              <PenTool className="h-5 w-5" />
-              Inscrição
-            </Button>
-          </div>
-        </div>
+
+<p
+  className="
+    text-base
+    sm:text-lg
+    text-white
+    mb-3
+    leading-relaxed
+    drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+  "
+>
+  O <strong>Sertão Maker</strong> é uma incubadora que apoia startups e projetos
+  inovadores desde a ideia até a prototipação e entrada no mercado.
+</p>
+
+<p
+  className="
+    text-sm
+    sm:text-base
+    text-white/90
+    mb-6
+    drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]
+  "
+>
+</p>
+ 
+ </div>
 
     {/* Announcement Box */}
-  <div className="mb-6 flex justify-center px-4">
+  <div className="mb-5 flex justify-center px-4">
     <div
       className="
         bg-white/70
@@ -100,6 +112,28 @@ const HeroSection = () => {
       </p>
     </div>
   </div>
+
+    {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 mb-6 justify-center items-center">
+            <Button
+              size="lg"
+              variant="hero"
+              className="group flex items-center gap-2"
+              onClick={() => window.open('https://drive.google.com/file/d/1Z9I4vpB9fBLtq9DiOb3D2mozLWufo7sY/view?usp=sharing', '_blank')}
+            >
+              <FileText className="h-5 w-5" />
+              Ver Edital
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="bg-white/20 text-white hover:bg-white/90 border-white/30 hover:text-primary  flex items-center gap-2"
+              onClick={() => window.open('https://programas.sebraestartups.com.br/in/sertaoinovador', '_blank')}
+            >
+              <PenTool className="h-5 w-5" />
+              Inscrição
+            </Button>
+          </div>
 
 
         {/* Benefícios */}
