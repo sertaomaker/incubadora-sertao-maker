@@ -75,7 +75,7 @@ const HeroSection = () => {
         </div>
 
     {/* Announcement Box */}
-<div className="mt-8 flex justify-center px-4">
+<div className="mb-6 flex justify-center px-4">
   <div
     className="
       bg-white/70
@@ -92,8 +92,8 @@ const HeroSection = () => {
       ⏰ Inscrições abertas:
       <span className="block sm:inline">
         {" "}
-        <span className="text-primary">02/12/2025</span> a{" "}
-        <span className="text-primary">04/01/2026</span>
+        <span className="text-primary">02/12/25</span> a{" "}
+        <span className="text-primary">04/01/26</span>
       </span>
     </p>
   </div>
