@@ -78,7 +78,7 @@ const HeroSection = () => {
 <div className="mt-8">
   <div className="bg-white/80 mb-4 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 inline-flex items-center justify-center mx-auto shadow-lg">
     <p className="text-orange-700 text-lg sm:text-xl font-bold tracking-wide">
-      Inscrições de <span className="text-primary">02/12</span> até <span className="text-primary">23/12</span>!
+      Inscrições de <span className="text-primary">02/12/2025</span> até <span className="text-primary">04/01/2026</span>!
     </p>
   </div>
 </div>
