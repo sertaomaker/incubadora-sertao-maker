@@ -75,24 +75,30 @@ const HeroSection = () => {
         </div>
 
     {/* Announcement Box */}
-<div className="mt-8 flex justify-center">
+<div className="mt-8 flex justify-center px-4">
   <div
     className="
       bg-white/70
       backdrop-blur-md
       border border-orange-400/40
-      rounded-full
-      px-8 py-3
+      rounded-2xl sm:rounded-full
+      px-6 sm:px-8
+      py-3
       shadow-md
+      max-w-full
     "
   >
-    <p className="text-orange-700  text-base sm:text-lg font-bold text-center ">
-      ⏰ Inscrições de: {" "}
-      <span className="text-primary">02/12/2025</span> a{" "}
-      <span className="text-primary">04/01/2026</span>
+    <p className="text-orange-700 text-sm sm:text-lg font-bold text-center leading-snug">
+      ⏰ Inscrições abertas:
+      <span className="block sm:inline">
+        {" "}
+        <span className="text-primary">02/12/2025</span> a{" "}
+        <span className="text-primary">04/01/2026</span>
+      </span>
     </p>
   </div>
 </div>
+
 
         {/* Benefícios */}
 <div className="max-w-5xl mx-auto mb-10 text-left">
