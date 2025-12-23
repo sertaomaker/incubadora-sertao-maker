@@ -66,7 +66,7 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               className="bg-white/20 text-white hover:bg-white/90 border-white/30 hover:text-primary  flex items-center gap-2"
-              onClick={() => window.open('https://programas.sebraestartups.com.br/in/sertaoinovador')}
+              onClick={() => window.open('https://programas.sebraestartups.com.br/in/sertaoinovador', '_blank')}
             >
               <PenTool className="h-5 w-5" />
               Inscrição
@@ -75,14 +75,24 @@ const HeroSection = () => {
         </div>
 
     {/* Announcement Box */}
-<div className="mt-8">
-  <div className="bg-white/80 mb-4 backdrop-blur-md border border-white/30 rounded-2xl px-6 py-4 inline-flex items-center justify-center mx-auto shadow-lg">
-    <p className="text-orange-700 text-lg sm:text-xl font-bold tracking-wide">
-      Inscrições de <span className="text-primary">02/12/2025</span> até <span className="text-primary">04/01/2026</span>!
+<div className="mt-8 flex justify-center">
+  <div
+    className="
+      bg-white/70
+      backdrop-blur-md
+      border border-orange-400/40
+      rounded-full
+      px-8 py-3
+      shadow-md
+    "
+  >
+    <p className="text-orange-700  text-base sm:text-lg font-bold text-center ">
+      ⏰ Inscrições abertas:{" "}
+      <span className="text-primary">02/12/2025</span> a{" "}
+      <span className="text-primary">04/01/2026</span>
     </p>
   </div>
 </div>
-
 
         {/* Benefícios */}
 <div className="max-w-5xl mx-auto mb-10 text-left">
