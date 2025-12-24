@@ -4,6 +4,9 @@ import { Card } from "./ui/card";
 
 import heroBanner from "@/assets/hero-banner.jpg";
 
+import AudioPlayer from "@/components/AudioPlayer";
+
+
 const HeroSection = () => {
   const beneficios = [
     "Crédito AWS 5 mil dólares",
@@ -86,6 +89,8 @@ const HeroSection = () => {
 </p>
  
  </div>
+
+
 
     {/* Announcement Box */}
   <div className="mb-5 flex justify-center px-4">

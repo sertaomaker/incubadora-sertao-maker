@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Target, Users, Lightbulb, TrendingUp } from "lucide-react";
 import { Button } from "./ui/button";
+import AudioPlayer from '@/components/AudioPlayer'
+
 
 const AboutSection = () => {
   const features = [
@@ -40,6 +42,12 @@ const AboutSection = () => {
             em oportunidades globais.
           </p>
         </div>
+
+          {/* Audio Player */}
+        <AudioPlayer 
+        src="src\assets\audios\incubacao-gratuita-e-equity-free-em-pernambuco.m4a"
+        title="Desenvolvendo Inovação no Sertão: Conheça o Sertão Inovador"
+      />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
