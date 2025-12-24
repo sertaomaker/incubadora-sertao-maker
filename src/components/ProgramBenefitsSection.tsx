@@ -72,7 +72,7 @@ const destaques = [
 
 const ProgramBenefitsSection = () => {
   return (
-    <section className="py-20 pt-10 bg-background/10">
+    <section id="beneficios" className="py-20  bg-background/10 scroll-mt-19">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Benefícios */}
         <div className="max-w-5xl mx-auto mb-20">
