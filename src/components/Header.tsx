@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import ISMLogo from "@/assets/img/incubadoraLogos/ISM_Logo1.png"
+import ISMLogo from "@/assets/img/incubadoraLogos/ISM_Logo1.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,9 +12,14 @@ const Header = () => {
     { label: "Como funciona", href: "#como-funciona" },
     { label: "Programas", href: "#programas" },
     { label: "Startups", href: "#startups" },
+    { label: "FAQ", href: "#FAQ" },
     { label: "Notícias", href: "#noticias" },
-    {/* label: "Histórico", href: "#historico"*/ },
-    {/* label: "Equipe", href: "#equipe" */},
+    {
+      /* label: "Histórico", href: "#historico"*/
+    },
+    {
+      /* label: "Equipe", href: "#equipe" */
+    },
   ];
 
   return (
@@ -24,9 +29,14 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex items-center">
-              <a href="https://www.sertaomaker.com.br/"><img src={ISMLogo} alt="Sertão Maker Logo" className="h-10 w-auto" /></a>
+              <a href="https://www.sertaomaker.com.br/">
+                <img
+                  src={ISMLogo}
+                  alt="Sertão Maker Logo"
+                  className="h-10 w-auto"
+                />
+              </a>
             </div>
-
           </div>
 
           {/* Desktop Menu */}
@@ -44,7 +54,15 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Button onClick={()=> window.open("https://chat.whatsapp.com/Db4BlZX087kEM3wPYhsRsj?mode=ems_share_c")} variant="cta" size="sm">
+            <Button
+              onClick={() =>
+                window.open(
+                  "https://chat.whatsapp.com/Db4BlZX087kEM3wPYhsRsj?mode=ems_share_c"
+                )
+              }
+              variant="cta"
+              size="sm"
+            >
               Entrar na Comunidade
             </Button>
           </div>
@@ -76,8 +94,16 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button onClick={()=> window.open("https://chat.whatsapp.com/Db4BlZX087kEM3wPYhsRsj?mode=ems_share_c")} variant="cta" size="sm">
-                    Entrar na Comunidade
+                <Button
+                  onClick={() =>
+                    window.open(
+                      "https://chat.whatsapp.com/Db4BlZX087kEM3wPYhsRsj?mode=ems_share_c"
+                    )
+                  }
+                  variant="cta"
+                  size="sm"
+                >
+                  Entrar na Comunidade
                 </Button>
               </div>
             </div>

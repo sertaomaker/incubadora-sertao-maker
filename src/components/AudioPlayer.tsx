@@ -1,12 +1,7 @@
 import { useRef, useState, useEffect } from "react";
-import {
-  Play,
-  Pause,
-  RotateCcw,
-  RotateCw
-} from "lucide-react";
+import { Play, Pause, RotateCcw, RotateCw } from "lucide-react";
 
-import { FastForward } from 'lucide-react';
+import { FastForward } from "lucide-react";
 type Props = {
   src: string;
   title?: string;
@@ -95,10 +90,7 @@ export default function AudioPlayer({ src, title }: Props) {
 
       {/* PROGRESS */}
       <div>
-        <div
-          onClick={seek}
-          className="h-2 rounded bg-white/100 cursor-pointer"
-        >
+        <div onClick={seek} className="h-2 rounded bg-white/100 cursor-pointer">
           <div
             className="h-2 rounded bg-primary"
             style={{ width: `${progress}%` }}
@@ -112,12 +104,11 @@ export default function AudioPlayer({ src, title }: Props) {
       </div>
 
       {/* CONTROLS */}
-<div className="mt-2 flex items-center gap-2">
-
-  {/* PLAY */}
-  <button
-    onClick={togglePlay}
-    className="
+      <div className="mt-2 flex items-center gap-2">
+        {/* PLAY */}
+        <button
+          onClick={togglePlay}
+          className="
       w-10 h-10
       rounded-full
       bg-primary
@@ -125,56 +116,56 @@ export default function AudioPlayer({ src, title }: Props) {
       flex items-center justify-center
       flex-shrink-0
     "
-  >
-    {playing ? <Pause size={20} /> : <Play size={20} />}
-  </button>
+        >
+          {playing ? <Pause size={20} /> : <Play size={20} />}
+        </button>
 
-  {/* BACK 5 */}
-  <button
-    onClick={() => skip(-5)}
-    className="
+        {/* BACK 5 */}
+        <button
+          onClick={() => skip(-5)}
+          className="
      w-8 h-8
       flex items-center justify-center
       text-muted-foreground
       hover:text-primary
       transition-colors
     "
-  >
-    <RotateCcw size={18} />
-  </button>
+        >
+          <RotateCcw size={18} />
+        </button>
 
-  {/* FORWARD 15 */}
-  <button
-    onClick={() => skip(15)}
-    className="
+        {/* FORWARD 15 */}
+        <button
+          onClick={() => skip(15)}
+          className="
       w-8 h-8
       flex items-center justify-center
       text-muted-foreground
       hover:text-primary
       transition-colors
     "
-  >
-    <RotateCw size={18} />
-  </button>
+        >
+          <RotateCw size={18} />
+        </button>
 
-  {/* SPEED */}
-  <div className="relative">
-    <button
-      onClick={() => setOpen(!open)}
-      className="
+        {/* SPEED */}
+        <div className="relative">
+          <button
+            onClick={() => setOpen(!open)}
+            className="
         w-8 h-8
         flex items-center justify-center
         text-muted-foreground
         hover:text-primary
         transition-colors
       "
-    >
-      <FastForward size={18} />
-    </button>
+          >
+            <FastForward size={18} />
+          </button>
 
-    {open && (
-      <div
-        className="
+          {open && (
+            <div
+              className="
           absolute left-1/2 -translate-x-1/2 bottom-full mb-2
           bg-background
           border border-border
@@ -183,17 +174,19 @@ export default function AudioPlayer({ src, title }: Props) {
           overflow-hidden
           z-20
         "
-      > <p className="text-primary text-sm font-semibold px-3">
-        Velocidade
-      </p>
-        {speeds.map((s) => (
-          <button
-            key={s}
-            onClick={() => {
-              setSpeed(s);
-              setOpen(false);
-            }}
-            className={`
+            >
+              {" "}
+              <p className="text-primary text-sm font-semibold px-3">
+                Velocidade
+              </p>
+              {speeds.map((s) => (
+                <button
+                  key={s}
+                  onClick={() => {
+                    setSpeed(s);
+                    setOpen(false);
+                  }}
+                  className={`
               block w-full px-3 py-1.5 text-xs text-left
               ${
                 speed === s
@@ -201,15 +194,14 @@ export default function AudioPlayer({ src, title }: Props) {
                   : "hover:bg-muted"
               }
             `}
-          >
-            {s}x
-          </button>
-        ))}
+                >
+                  {s}x
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-    )}
-  </div>
-</div>
-
 
       <audio ref={audioRef} src={src} preload="metadata" />
     </div>
