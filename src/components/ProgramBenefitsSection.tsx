@@ -88,7 +88,7 @@ const ProgramBenefitsSection = () => {
 
           {/* Audio Player */}
           <AudioPlayer
-            src="src\assets\audios\incubacao-gratuita-e-equity-free-em-pernambuco.m4a"
+            src="src\assets\audios\incubacao-gratuita-e-equity-free-em-pernambuco.mp3"
             title="Desenvolvendo Inovação no Sertão: Conheça o Sertão Inovador"
           />
 
