@@ -4,25 +4,9 @@ import { Card } from "./ui/card";
 
 import heroBanner from "@/assets/hero-banner.jpg";
 
-import AudioPlayer from "@/components/AudioPlayer";
+import AudioPlayer from "@/components/players/AudioPlayer";
 
 const HeroSection = () => {
-  const beneficios = [
-    "Crédito AWS 5 mil dólares",
-    "Crédito Zoho - até 30 mil reais",
-    "Mentorias",
-    "Ajuda na captação de recursos / escrita de editais",
-    "Networking",
-    "Cursos Cisco, Huawei, PUC Rio (Programação, IA e etc)",
-  ];
-
-  const destaques = [
-    "Diagnóstico e plano individual de cada startup",
-    "Mentorias com uma rede de mentores de todo o Brasil",
-    "Experiência na captação de recursos",
-    "Incubação cruzada com incubadora da Europa",
-  ];
-
   return (
     <section
       id="inicio"
@@ -62,7 +46,8 @@ const HeroSection = () => {
     text-base
     sm:text-lg
     text-white
-    mb-3
+    mt-8
+    mb-10
     leading-relaxed
     drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]
   "
@@ -113,7 +98,7 @@ const HeroSection = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-6 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 mb-10 mt-10 justify-center items-center">
           <Button
             size="lg"
             variant="hero"

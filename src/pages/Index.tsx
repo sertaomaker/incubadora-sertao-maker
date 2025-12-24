@@ -9,12 +9,15 @@ import TeamSection from "@/components/TeamSection";
 import NewsSection from "@/components/NewsSection";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
+import ProgramHighlightsSection from "@/components/ProgramBenefitsSection";
+import ProgramBenefitsSection from "@/components/ProgramBenefitsSection";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <HeroSection />
+      <ProgramBenefitsSection />
       <AboutSection />
       <ProcessSection />
       <ProgramsSection />
