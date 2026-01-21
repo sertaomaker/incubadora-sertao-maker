@@ -71,38 +71,43 @@ const HeroSection = () => {
         </div>
 
         {/* Announcement Box */}
-        <div className="mb-5 flex justify-center px-4">
-          <div
-            className="
-        bg-white/70
-        backdrop-blur-md
-        border border-orange-400/40
-        rounded-2xl sm:rounded-full
-        px-6 sm:px-8
-        py-3
-        ring-2 ring-orange-400/50
-        animate-pulse
-        shadow-lg
-        max-w-full
-      "
-          >
-            <p className="text-orange-700 text-sm sm:text-lg font-bold text-center leading-snug">
-              ⏰ Inscrições abertas para o Programa de Incubação:
-              <span className="block sm:inline">
-                {" "}
-                <span className="text-primary">02/12/25</span> a{" "}
-                <span className="text-primary">04/01/26</span>
-              </span>
-            </p>
-          </div>
-        </div>
+        <div className="mb-6 flex justify-center px-4">
+  <div
+    className="
+      max-w-3xl
+      rounded-2xl
+      bg-white/70 backdrop-blur-md
+      border border-orange-400/40
+      ring-2 ring-orange-400/50
+      px-6 sm:px-8 py-5
+      shadow-lg
+    "
+  >
+    <p className="text-center text-lg sm:text-xl font-bold text-orange-700">
+      🚀 Resultado preliminar no ar!
+    </p>
+
+    <p className="mt-3 text-center text-base sm:text-lg text-gray-700 leading-relaxed">
+      O resultado preliminar do
+      <span className="font-semibold text-primary">
+        {" "}
+        Programa de Incubação{" "}
+      </span>
+      já está disponível!
+      <br />
+      Confira a lista, veja sua classificação e fique atento aos prazos para
+      recursos e às próximas etapas.
+    </p>
+  </div>
+</div>
+
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mb-10 mt-10 justify-center items-center">
           <Button
             size="lg"
             variant="hero"
-            className="group flex items-center gap-2"
+            className="bg-primary/80 text-white hover:bg-orange-600 border-white/30 hover:text-white  flex items-center gap-2"
             onClick={() =>
               window.open(
                 "https://ifsertaope.edu.br/editais/edital-n-o-191-2025/",
@@ -111,21 +116,7 @@ const HeroSection = () => {
             }
           >
             <FileText className="h-5 w-5" />
-            Ver Edital
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="bg-white/20 text-white hover:bg-white/90 border-white/30 hover:text-primary  flex items-center gap-2"
-            onClick={() =>
-              window.open(
-                "https://programas.sebraestartups.com.br/in/sertaoinovador",
-                "_blank"
-              )
-            }
-          >
-            <PenTool className="h-5 w-5" />
-            Inscrição
+            Resultado preliminar
           </Button>
         </div>
       </div>
