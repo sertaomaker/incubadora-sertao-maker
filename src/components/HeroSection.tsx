@@ -84,19 +84,18 @@ const HeroSection = () => {
     "
   >
     <p className="text-center text-lg sm:text-xl font-bold text-orange-700">
-      🚀 Resultado preliminar no ar!
+      Resultado final divulgado!
     </p>
 
     <p className="mt-3 text-center text-base sm:text-lg text-gray-700 leading-relaxed">
-      O resultado preliminar do
+      O resultado final do
       <span className="font-semibold text-primary">
         {" "}
         Programa de Incubação{" "}
       </span>
       já está disponível!
       <br />
-      Confira a lista, veja sua classificação e fique atento aos prazos para
-      recursos e às próximas etapas.
+      Confira a lista final e acompanhe as próximas orientações.
     </p>
   </div>
 </div>
@@ -104,20 +103,21 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mb-10 mt-10 justify-center items-center">
-          <Button
-            size="lg"
-            variant="hero"
-            className="bg-primary/80 text-white hover:bg-orange-600 border-white/30 hover:text-white  flex items-center gap-2"
-            onClick={() =>
-              window.open(
-                "https://ifsertaope.edu.br/editais/edital-n-o-191-2025/",
-                "_blank"
-              )
-            }
-          >
-            <FileText className="h-5 w-5" />
-            Resultado preliminar
-          </Button>
+        <Button
+  size="lg"
+  variant="hero"
+  className="bg-primary/80 text-white hover:bg-orange-600 border-white/30 hover:text-white flex items-center gap-2"
+  onClick={() =>
+    window.open(
+      "https://ifsertaope.edu.br/editais/edital-n-o-191-2025/",
+      "_blank"
+    )
+  }
+>
+  <FileText className="h-5 w-5" />
+  Resultado final
+</Button>
+
         </div>
       </div>
     </section>
