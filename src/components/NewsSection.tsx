@@ -11,10 +11,13 @@ import workshopInovacaoImage from "@/assets/news/workshop-inovacao.jpg";
 import agtechStartupImage from "@/assets/news/agtech-startup.jpg";
 import edtechPlatformImage from "@/assets/news/edtech-platform.jpg";
 
-import centelha from "@/assets/news/centelha.png";
+import mulheresQueInovam from "@/assets/news/mulheres-que-inovam.jpeg"
+import pernambucanasInovadoras from "@/assets/news/pernambucanas-inovadoras.jpeg"
+{/*import centelha from "@/assets/news/centelha.png";
 import  sebraeStartups from "@/assets/news/sebraeStartups.png"
 import competSolucoes from "@/assets/news/Compet-Soluções.png"
 import desafiosSociais from "@/assets/news/desafiosSociais.jpeg"
+*/}
 
 const NewsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("todas");
@@ -22,43 +25,23 @@ const NewsSection = () => {
   const news = [
     {
       type: "processo",
-      title: "Edital Aberto: Centelha",
-      excerpt: "O Programa Centelha apoia inovadores com capacitações, recursos e suporte para transformar ideias em negócios.",
-      date: "Até 15 Dez",
+      title: "Edital Pró-Startups: Mulheres que Inovam incentiva empreendedorismo feminino em Pernambuco",
+      excerpt: "Iniciativa voltada a empreendedoras representantes de startups pernambucanas interessadas em desenvolver soluções inovadoras. A ação integra o Programa Inova PE, estratégia do Governo de Pernambuco para fortalecer a integração entre ciência, tecnologia, inovação e empreendedorismo, impulsionando o desenvolvimento humano, econômico e tecnológico de Pernambuco.",
+      date: "Até 27 Abr",
       readTime: "10 min",
       category: "Editais",
-      image: centelha,
-      link: "https://www.programacentelha.com.br"
+      image: mulheresQueInovam,
+      link: "https://www.facepe.br/governo-de-pernambuco-lanca-edital-pro-startups-mulheres-que-inovam-e-fortalece-a-lideranca-feminina-no-estado/"
     },
     {
       type: "processo",
-      title: "Edital Aberto: Inova Caatinga",
-      excerpt: "O Inova Caatinga é um programa que acelera projetos de bioeconomia, buscando soluções sustentáveis para o bioma.",
-      date: "Até 07 Dez",
+      title: "Edital Pernambucanas Inovadoras fortalece protagonismo feminino na ciência e inovação",
+      excerpt: "A iniciativa apoia projetos de pesquisa que possam se transformar em soluções inovadoras e busca valorizar a participação ativa das mulheres em iniciativas de empreendedorismo e inovação, além de promover a equidade de gênero no Sistema de Ciência, Tecnologia e Inovação de Pernambuco.",
+      date: "Até 11 Mai",
       readTime: "10 min",
       category: "Editais",
-      image: sebraeStartups,
-      link: "https://programas.sebraestartups.com.br/in/inovacaatinga"
-    },
-    {
-      type: "processo",
-      title: "Edital Aberto: Compet Soluções",
-      excerpt: "Governo lança nova edição de R$ 2,24 milhões para apoiar empresas em projetos inovadores",
-      date: "Até 26 Jan",
-      readTime: "10 min",
-      category: "Editais",
-      image: competSolucoes,
-      link: "https://www.facepe.br/compet-solucoes-governo-lanca-nova-edicao-de-r-224-milhoes-para-apoiar-empresas-em-projetos-inovadores/"
-    },
-    {
-      type: "processo",
-      title: "Edital Aberto: Inovação Aberta para Desafios Sociais",
-      excerpt: "A iniciativa de PE apoia startups com projetos inovadores em colaboração com ICTs, visando soluções sociais em Pernambuco.",
-      date: "Até 22 Dez",
-      readTime: "15 min",
-      category: "Editais",
-      image: desafiosSociais,
-      link: "https://www.facepe.br/facepe-prorroga-o-prazo-de-submissoes-do-edital-332025-inovacao-aberta-para-desafios-sociais/"
+      image: pernambucanasInovadoras,
+      link: "https://www.facepe.br/edital-pernambucanas-inovadoras-r-21-milhoes-para-projetos-liderados-por-mulheres-pesquisadoras/"
     },
   ];
 
@@ -130,7 +113,7 @@ const NewsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredNews.map((item, index) => (
-            <Card key={index} className="overflow-hidden bg-background border-border/50 hover:shadow-soft transition-all duration-300 group">
+            <Card key={index} className="overflow-hidden bg-background border-border/50 hover:shadow-soft transition-all  duration-300 group">
               <div className="aspect-video overflow-hidden">
                 <img 
                   src={item.image} 
