@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, ArrowRight, Users, Megaphone, Filter } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import partnershipSebraeImage from "@/assets/news/partnership-sebrae.jpg";
 import demoDayImage from "@/assets/news/demo-day.jpg";
@@ -13,20 +14,65 @@ import edtechPlatformImage from "@/assets/news/edtech-platform.jpg";
 
 import mulheresQueInovam from "@/assets/news/mulheres-que-inovam.jpeg"
 import pernambucanasInovadoras from "@/assets/news/pernambucanas-inovadoras.jpeg"
-{/*import centelha from "@/assets/news/centelha.png";
+import centelha from "@/assets/news/centelha.png";
 import  sebraeStartups from "@/assets/news/sebraeStartups.png"
 import competSolucoes from "@/assets/news/Compet-Soluções.png"
 import desafiosSociais from "@/assets/news/desafiosSociais.jpeg"
-*/}
+
 
 const NewsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("todas");
 
   const news = [
     {
+      slug: "centelha",
+      type: "processo",
+      title: "Edital Aberto: Centelha",
+      excerpt: "O Programa Centelha apoia inovadores com capacitações, recursos e suporte para transformar ideias em negócios.",
+      date: "Até 15 Dez",
+      readTime: "10 min",
+      category: "Editais",
+      image: centelha,
+      link: "src/pages/news/NoticiaCentelha.tsx"
+    },
+    {
+      slug:"inova-caatinga",
+      type: "processo",
+      title: "Edital Aberto: Inova Caatinga",
+      excerpt: "O Inova Caatinga é um programa que acelera projetos de bioeconomia, buscando soluções sustentáveis para o bioma.",
+      date: "Até 07 Dez",
+      readTime: "10 min",
+      category: "Editais",
+      image: sebraeStartups,
+      link: "https://programas.sebraestartups.com.br/in/inovacaatinga"
+    },
+    {
+      slug:"compet-solucoes",
+      type: "processo",
+      title: "Edital Aberto: Compet Soluções",
+      excerpt: "Governo lança nova edição de R$ 2,24 milhões para apoiar empresas em projetos inovadores",
+      date: "Até 26 Jan",
+      readTime: "10 min",
+      category: "Editais",
+      image: competSolucoes,
+      link: "https://www.facepe.br/compet-solucoes-governo-lanca-nova-edicao-de-r-224-milhoes-para-apoiar-empresas-em-projetos-inovadores/"
+    },
+    {
+      slug:"desafios-sociais",
+      type: "processo",
+      title: "Edital Aberto: Inovação Aberta para Desafios Sociais",
+      excerpt: "A iniciativa de PE apoia startups com projetos inovadores em colaboração com ICTs, visando soluções sociais em Pernambuco.",
+      date: "Até 22 Dez",
+      readTime: "15 min",
+      category: "Editais",
+      image: desafiosSociais,
+      link: "https://www.facepe.br/facepe-prorroga-o-prazo-de-submissoes-do-edital-332025-inovacao-aberta-para-desafios-sociais/"
+    },
+    {
+      slug:"mulheres-que-inovam",
       type: "processo",
       title: "Edital Pró-Startups: Mulheres que Inovam incentiva empreendedorismo feminino em Pernambuco",
-      excerpt: "Iniciativa voltada a empreendedoras representantes de startups pernambucanas interessadas em desenvolver soluções inovadoras. A ação integra o Programa Inova PE, estratégia do Governo de Pernambuco para fortalecer a integração entre ciência, tecnologia, inovação e empreendedorismo, impulsionando o desenvolvimento humano, econômico e tecnológico de Pernambuco.",
+      excerpt: "Iniciativa voltada a empreendedoras representantes de startups pernambucanas interessadas em desenvolver soluções inovadoras.",
       date: "Até 27 Abr",
       readTime: "10 min",
       category: "Editais",
@@ -34,9 +80,10 @@ const NewsSection = () => {
       link: "https://www.facepe.br/governo-de-pernambuco-lanca-edital-pro-startups-mulheres-que-inovam-e-fortalece-a-lideranca-feminina-no-estado/"
     },
     {
+      slug:"pernambucanas-inovadoras",
       type: "processo",
       title: "Edital Pernambucanas Inovadoras fortalece protagonismo feminino na ciência e inovação",
-      excerpt: "A iniciativa apoia projetos de pesquisa que possam se transformar em soluções inovadoras e busca valorizar a participação ativa das mulheres em iniciativas de empreendedorismo e inovação, além de promover a equidade de gênero no Sistema de Ciência, Tecnologia e Inovação de Pernambuco.",
+      excerpt: "Apoio a pesquisas de mulheres pernambucanas para criar soluções inovadoras e promover a equidade de gênero no setor.",
       date: "Até 11 Mai",
       readTime: "10 min",
       category: "Editais",
@@ -156,15 +203,13 @@ const NewsSection = () => {
                 </div>
 
                 {/* Botão com link único */}
-                <a 
-                  href={item.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <Link
+                  to={`/noticia/${item.slug}`}
                   className="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium rounded-md border border-transparent bg-background text-foreground hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
-                  {item.type === "processo" ? "Ver Edital" : "Ler Mais"}
+                  Ler Mais
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
+                </Link>
               </div>
             </Card>
           ))}

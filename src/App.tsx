@@ -7,6 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
+// Notícias
+import NoticiasPage from "./pages/news/NoticiasPage";
+
+
+
 // importe o novo componente
 import ProgramHistory from "../src/components/ProgramHistory"
 import ProgramaDetails from "./pages/ProgramaDetails";
@@ -25,6 +30,8 @@ const App = () => (
           {/* Rota do histórico*/}
           <Route path="/historico" element={<ProgramHistory />} />
            
+           {/*Rota das noticias*/}
+           <Route path="/noticia/:slug" element={<NoticiasPage />} />
 
           <Route path="/programa/:id" element={<ProgramaDetails />} />
 
