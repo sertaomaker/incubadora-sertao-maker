@@ -15,6 +15,7 @@ import NoticiasPage from "./pages/news/NoticiasPage";
 // importe o novo componente
 import ProgramHistory from "../src/components/ProgramHistory"
 import ProgramaDetails from "./pages/ProgramaDetails";
+import EditalIndisponivel from "./pages/EditalIndisponivel";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -34,6 +35,9 @@ const App = () => (
            <Route path="/noticia/:slug" element={<NoticiasPage />} />
 
           <Route path="/programa/:id" element={<ProgramaDetails />} />
+
+          <Route path="/edital" element={<EditalIndisponivel />} />
+          
 
 
           {/* rotas personalizadas devem ficar acima desta */}

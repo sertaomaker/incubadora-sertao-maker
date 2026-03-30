@@ -8,6 +8,13 @@ import pernambucanasInovadorasImage from "@/assets/news/pernambucanas-inovadoras
 //Imagens da página de noticias
 import noticiaCentelha1 from "@/assets/news/noticias-img/noticiaCentelha1.jpeg";
 import noticiaCentelha2 from "@/assets/news/noticias-img/noticiaCentelha2.jpeg";
+import noticiaInovaCaatinga1 from "@/assets/news/noticias-img/noticiaInovaCaatinga1.jpeg"
+import noticiaCompet1 from "@/assets/news/noticias-img/noticiaCompet1.jpeg"
+import noticiaCompet2 from "@/assets/news/noticias-img/noticiaCompet2.jpeg"
+import noticiaMulheresQueInovam from "@/assets/news/noticias-img/mulheres-que-inovam1.jpeg"
+import noticiaPernambucanasInovadoras from "@/assets/news/noticias-img/pernambucanas-inovadoras.jpeg"
+
+
 export const noticias = {
   centelha: {
   slug: "centelha",
@@ -27,7 +34,7 @@ export const noticias = {
   {
     type: "image",
     src: noticiaCentelha1,
-    caption: "Programa Centelha incentiva a criação de startups inovadoras."
+    caption: "Programa Centelha incentiva a criação de startups inovadoras. (Imagem gerada por Inteligência Artificial)"
   },
   {
     type: "paragraph",
@@ -40,7 +47,7 @@ export const noticias = {
   {
     type: "image",
     src: noticiaCentelha2,
-    caption: "Capacitações e mentorias fazem parte da jornada dos participantes."
+    caption: "Capacitações e mentorias fazem parte da jornada dos participantes. (Imagem gerada por Inteligência Artificial)"
   },
   {
     type: "paragraph",
@@ -77,8 +84,8 @@ export const noticias = {
   },
   {
     type: "image",
-    src: inovaCaatingaImage,
-    caption: "Inova Caatinga incentiva soluções sustentáveis para o bioma."
+    src: noticiaInovaCaatinga1,
+    caption: "Inova Caatinga incentiva soluções sustentáveis para o bioma. (Imagem gerada por Inteligência Artificial)"
   },
   {
     type: "paragraph",
@@ -88,11 +95,7 @@ export const noticias = {
     type: "paragraph",
     text: "Startups, pesquisadores e empreendedores podem submeter propostas que envolvam áreas como bioeconomia, agricultura sustentável, preservação ambiental e desenvolvimento de novos produtos derivados da biodiversidade da Caatinga."
   },
-  {
-    type: "image",
-    src: inovaCaatingaImage,
-    caption: "Projetos focam em inovação e sustentabilidade."
-  },
+  
   {
     type: "paragraph",
     text: "Os participantes selecionados passam por um processo de aceleração com mentorias especializadas, capacitações e conexão com instituições parceiras."
@@ -127,8 +130,8 @@ export const noticias = {
   },
   {
     type: "image",
-    src: competSolucoesImage,
-    caption: "Programa Compet Soluções incentiva projetos inovadores."
+    src: noticiaCompet1,
+    caption: "Programa Compet Soluções incentiva projetos inovadores. (Imagem gerada por Inteligência Artificial)"
   },
   {
     type: "paragraph",
@@ -140,8 +143,8 @@ export const noticias = {
   },
   {
     type: "image",
-    src: competSolucoesImage,
-    caption: "Empresas recebem apoio para desenvolver novas soluções."
+    src: noticiaCompet2,
+    caption: "Empresas recebem apoio para desenvolver novas soluções. (Imagem gerada por Inteligência Artificial)"
   },
   {
     type: "paragraph",
@@ -224,8 +227,8 @@ export const noticias = {
   },
   {
     type: "image",
-    src: mulheresQueInovamImage,
-    caption: "Programa incentiva liderança feminina na inovação."
+    src: noticiaMulheresQueInovam,
+    caption: "Programa incentiva liderança feminina na inovação. (Imagem gerada por Inteligência Artificial)"
   },
   {
     type: "paragraph",
@@ -235,11 +238,7 @@ export const noticias = {
     type: "paragraph",
     text: "O programa oferece apoio a empreendedoras interessadas em desenvolver soluções inovadoras com potencial de impacto econômico e social."
   },
-  {
-    type: "image",
-    src: mulheresQueInovamImage,
-    caption: "Empreendedoras recebem mentorias e capacitações."
-  },
+
   {
     type: "paragraph",
     text: "Além do apoio financeiro, as participantes também recebem mentorias, capacitações e acesso a redes de inovação."
@@ -268,8 +267,8 @@ export const noticias = {
   },
   {
     type: "image",
-    src: pernambucanasInovadorasImage,
-    caption: "Programa fortalece a participação feminina na ciência."
+    src: noticiaPernambucanasInovadoras,
+    caption: "Programa fortalece a participação feminina na ciência. (Imagem gerada por Inteligência Artificial)"
   },
   {
     type: "paragraph",
@@ -278,11 +277,6 @@ export const noticias = {
   {
     type: "paragraph",
     text: "Pesquisadoras podem submeter projetos que envolvam desenvolvimento científico, inovação tecnológica e soluções aplicadas."
-  },
-  {
-    type: "image",
-    src: pernambucanasInovadorasImage,
-    caption: "Projetos liderados por pesquisadoras recebem apoio."
   },
   {
     type: "paragraph",

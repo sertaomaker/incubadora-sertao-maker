@@ -115,15 +115,16 @@ const HeroSection = () => {
               para transformar ideias inovadoras em startups prontas para
               validação e crescimento.
               <br />
+              <br />
               <span className="font-semibold text-primary">
                 Vagas limitadas.{" "}
                 <a
                   className="text-primary hover:text-orange-600"
-                  href="https://sertaomaker.com.br"
+                  href="/edital"
                 >
                   Inscreva-se aqui
-                </a>
-                .
+                </a> <br />
+                <span className="font-semibold text-primary hover:text-orange-600"><a href="#cronograma">Acessar cronograma do programa</a></span>
               </span>
             </p>
 

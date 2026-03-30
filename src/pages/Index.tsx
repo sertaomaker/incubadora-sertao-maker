@@ -11,12 +11,14 @@ import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
 import ProgramHighlightsSection from "@/components/ProgramBenefitsSection";
 import ProgramBenefitsSection from "@/components/ProgramBenefitsSection";
+import Cronograma from "@/components/Cronograma";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <HeroSection />
+      <Cronograma />
       <ProgramBenefitsSection />
       <AboutSection />
       <ProcessSection />
