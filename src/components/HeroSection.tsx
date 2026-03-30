@@ -5,6 +5,7 @@ import { Card } from "./ui/card";
 import heroBanner from "@/assets/hero-banner.jpg";
 
 import AudioPlayer from "@/components/players/AudioPlayer";
+import { Link } from "react-router-dom"; // ✅ ADICIONADO
 
 const HeroSection = () => {
   return (
@@ -70,37 +71,7 @@ const HeroSection = () => {
           ></p>
         </div>
 
-        {/* <div className="mb-6 flex justify-center px-4">
-  <div
-    className="
-      max-w-3xl
-      rounded-2xl
-      bg-white/70 backdrop-blur-md
-      border border-orange-400/40
-      ring-2 ring-orange-400/50
-      px-6 sm:px-8 py-5
-      shadow-lg
-    "
-  >
-    <p className="text-center text-lg sm:text-xl font-bold text-orange-700">
-      Resultado final divulgado!
-    </p>
-
-    <p className="mt-3 text-center text-base sm:text-lg text-gray-700 leading-relaxed">
-      O resultado final do
-      <span className="font-semibold text-primary">
-        {" "}
-        Programa de Incubação{" "}
-      </span>
-      já está disponível!
-      <br />
-      Confira a lista final e acompanhe as próximas orientações.
-    </p>
-  </div>
-</div>
-*/}
         {/* Announcement Box */}
-
         <div className="mb-6 flex justify-center px-4">
           <div className="max-w-2xl rounded-2xl bg-white/70 backdrop-blur-md border-orange-400/40 ring-2 ring-orange-400/50 px-0 sm:px-2 py-4 shadow-lg">
             <p className="text-center text-lg sm:text-xl font-bold text-orange-700">
@@ -118,13 +89,16 @@ const HeroSection = () => {
               <br />
               <span className="font-semibold text-primary">
                 Vagas limitadas.{" "}
-                <a
+                <Link
                   className="text-primary hover:text-orange-600"
-                  href="/edital"
+                  to="/edital"
                 >
                   Inscreva-se aqui
-                </a> <br />
-                <span className="font-semibold text-primary hover:text-orange-600"><a href="#cronograma">Acessar cronograma do programa</a></span>
+                </Link>
+                <br />
+                <span className="font-semibold text-primary hover:text-orange-600">
+                  <a href="#cronograma">Acessar cronograma do programa</a>
+                </span>
               </span>
             </p>
 
@@ -133,7 +107,8 @@ const HeroSection = () => {
         </div>
 
         {/* CTA Buttons */}
-       {/*<div className="flex flex-col sm:flex-row gap-4 mb-10 mt-10 justify-center items-center">
+        {/*
+        <div className="flex flex-col sm:flex-row gap-4 mb-10 mt-10 justify-center items-center">
           <Button
             size="lg"
             variant="hero"
