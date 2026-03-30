@@ -8,13 +8,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 
-
 import {
   Calendar,
   Clock,
   User,
   ExternalLink,
-  Share2,
   Linkedin,
 } from "lucide-react";
 
@@ -23,6 +21,11 @@ const NoticiasPage = () => {
   const noticia = noticias[slug as keyof typeof noticias];
 
   const [progress, setProgress] = useState(0);
+
+  // ✅ força voltar pro topo quando abrir outra notícia
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [slug]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,12 +53,11 @@ const NoticiasPage = () => {
 
   return (
     <section className="py-10 bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100">
-     
       {/* progress bar */}
       <div
-  className="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary to-blue-400 z-50 transition-all"
-  style={{ width: `${progress}%` }}
-/>
+        className="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary to-blue-400 z-50 transition-all"
+        style={{ width: `${progress}%` }}
+      />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 bg-white/40 backdrop-blur-xl p-8 rounded-2xl shadow-xl">
         {/* breadcrumb */}
@@ -112,67 +114,69 @@ const NoticiasPage = () => {
             {noticia.tags && (
               <div className="flex flex-wrap gap-2 mb-8">
                 {noticia.tags.map((tag: string) => (
-                  
                   <Badge key={tag} variant="secondary">
                     {tag}
                   </Badge>
                 ))}
               </div>
             )}
-<Card className="p-10 bg-gradient-to-br from-indigo-50 to-blue-50 border-indigo-200 shadow-xl space-y-8 animate-fade-in max-w-3xl mx-auto">
-  {noticia.content.map((block: any, index: number) => {
 
-    if (block.type === "title") {
-      return (
-        <h2 key={index} className="text-2xl font-bold mt-6">
-          {block.text}
-        </h2>
-      );
-    }
+            <Card className="p-10 bg-gradient-to-br from-indigo-50 to-blue-50 border-indigo-200 shadow-xl space-y-8 animate-fade-in max-w-3xl mx-auto">
+              {noticia.content.map((block: any, index: number) => {
+                if (block.type === "title") {
+                  return (
+                    <h2 key={index} className="text-2xl font-bold mt-6">
+                      {block.text}
+                    </h2>
+                  );
+                }
 
-    if (block.type === "paragraph") {
-      return (
-        <p
-          key={index}
-          className="text-muted-foreground text-lg leading-relaxed"
-        >
-          {block.text}
-        </p>
-      );
-    }
+                if (block.type === "paragraph") {
+                  return (
+                    <p
+                      key={index}
+                      className="text-muted-foreground text-lg leading-relaxed"
+                    >
+                      {block.text}
+                    </p>
+                  );
+                }
 
-    if (block.type === "image") {
-      return (
-        <div key={index}>
-          <img
-  src={block.src}
-  className="w-full rounded-xl shadow-xl ring-1 ring-border my-8 cursor-zoom-in transition hover:scale-[1.02]"
-  onClick={() => window.open(block.src)}
-/>
+                if (block.type === "image") {
+                  return (
+                    <div key={index}>
+                      <img
+                        src={block.src}
+                        className="w-full rounded-xl shadow-xl ring-1 ring-border my-8 cursor-zoom-in transition hover:scale-[1.02]"
+                        onClick={() => window.open(block.src)}
+                      />
 
-        <p className="text-sm text-muted-foreground text-center mt-2 italic">
-  {block.caption}
-</p>
+                      <p className="text-sm text-muted-foreground text-center mt-2 italic">
+                        {block.caption}
+                      </p>
+                    </div>
+                  );
+                }
 
-        </div>
-      );
-    }
+                if (block.type === "list") {
+                  return (
+                    <ul
+                      key={index}
+                      className="space-y-3 border-l-4 border-primary/40 pl-5"
+                    >
+                      {block.items.map((item: string, i: number) => (
+                        <li key={i} className="text-muted-foreground text-lg">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                }
 
-    if (block.type === "list") {
-      return (
-       <ul key={index} className="space-y-3 border-l-4 border-primary/40 pl-5">
-          {block.items.map((item: string, i: number) => (
-            <li key={i} className="text-muted-foreground text-lg">
-              {item}
-            </li>
-          ))}
-        </ul>
-      );
-    }
+                return null;
+              })}
+            </Card>
 
-    return null;
-  })}
-</Card>
             {noticia.externalLink && (
               <div className="mt-8">
                 <Button
@@ -188,16 +192,16 @@ const NoticiasPage = () => {
 
           {/* SIDEBAR */}
           <div className="space-y-8 sticky top-24">
-            {/* outras notícias */}
             <Card className="p-6 bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 shadow-lg">
-              <h3 className="text-lg font-bold mb-4 border-b pb-2">Outras notícias</h3>
+              <h3 className="text-lg font-bold mb-4 border-b pb-2">
+                Outras notícias
+              </h3>
 
               <div className="space-y-4">
                 {Object.values(noticias)
                   .filter((n) => n.slug !== noticia.slug)
                   .slice(0, 6)
                   .map((item) => (
-                    
                     <Link
                       key={item.slug}
                       to={`/noticia/${item.slug}`}
@@ -226,13 +230,14 @@ const NoticiasPage = () => {
           </div>
         </div>
       </div>
+
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <Button
           size="icon"
           className="bg-[#25D366] hover:bg-[#1ebe5d] text-white shadow-lg"
           onClick={() =>
             window.open(
-              `https://wa.me/?text=${encodeURIComponent(window.location.href)}`,
+              `https://wa.me/?text=${encodeURIComponent(window.location.href)}`
             )
           }
         >
@@ -244,7 +249,7 @@ const NoticiasPage = () => {
           className="bg-[#0A66C2] hover:bg-[#004182] text-white shadow-lg"
           onClick={() =>
             window.open(
-              `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`,
+              `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`
             )
           }
         >
