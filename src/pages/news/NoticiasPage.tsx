@@ -8,13 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 
-import {
-  Calendar,
-  Clock,
-  User,
-  ExternalLink,
-  Linkedin,
-} from "lucide-react";
+import { Calendar, Clock, User, ExternalLink, Linkedin } from "lucide-react";
 
 const NoticiasPage = () => {
   const { slug } = useParams();
@@ -58,7 +52,6 @@ const NoticiasPage = () => {
         className="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary to-blue-400 z-50 transition-all"
         style={{ width: `${progress}%` }}
       />
-
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 bg-white/40 backdrop-blur-xl p-8 rounded-2xl shadow-xl">
         {/* breadcrumb */}
         <div className="text-sm text-muted-foreground mb-8">
@@ -230,15 +223,13 @@ const NoticiasPage = () => {
           </div>
         </div>
       </div>
-
+      const shareUrl = `${window.location.origin}/share/${noticia.slug}.html`;
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <Button
           size="icon"
           className="bg-[#25D366] hover:bg-[#1ebe5d] text-white shadow-lg"
           onClick={() =>
-            window.open(
-              `https://wa.me/?text=${encodeURIComponent(window.location.href)}`
-            )
+            window.open(`https://wa.me/?text=${encodeURIComponent(shareUrl)}`)
           }
         >
           <FaWhatsapp className="w-5 h-5" />
@@ -249,7 +240,7 @@ const NoticiasPage = () => {
           className="bg-[#0A66C2] hover:bg-[#004182] text-white shadow-lg"
           onClick={() =>
             window.open(
-              `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`
+              `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`,
             )
           }
         >
