@@ -35,6 +35,7 @@ const NoticiasPage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const shareUrl = `${window.location.origin}/share/${noticia.slug}.html`;
   if (!noticia) {
     return (
       <div className="text-center py-32 text-muted-foreground">
@@ -42,8 +43,6 @@ const NoticiasPage = () => {
       </div>
     );
   }
-
-  const shareUrl = `${window.location.origin}/share/${noticia.slug}.html`;
 
   return (
     <section className="py-10 bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100">
