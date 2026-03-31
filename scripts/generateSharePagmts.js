@@ -10,7 +10,7 @@ if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-const sanitize = (text: string) => {
+const sanitize = (text) => {
   if (!text) return "";
   return text
     .replace(/&/g, "&amp;")
@@ -19,7 +19,7 @@ const sanitize = (text: string) => {
     .replace(/"/g, "&quot;");
 };
 
-const buildPublicUrl = (src: string) => {
+const buildPublicUrl = (src) => {
   if (!src) return "";
 
   if (src.startsWith("http")) return src;
@@ -30,7 +30,7 @@ const buildPublicUrl = (src: string) => {
 
 const noticiasShare = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
 
-noticiasShare.forEach((noticia: any) => {
+noticiasShare.forEach((noticia) => {
   const slug = noticia.slug;
 
   const title = sanitize(noticia.title);
