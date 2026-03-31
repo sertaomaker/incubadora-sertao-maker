@@ -43,7 +43,7 @@ const NoticiasPage = () => {
     );
   }
 
-  const shareUrl = window.location.href;
+  const shareUrl = `${window.location.origin}/share/${noticia.slug}.html`;
 
   return (
     <section className="py-10 bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100">
@@ -52,6 +52,7 @@ const NoticiasPage = () => {
         className="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary to-blue-400 z-50 transition-all"
         style={{ width: `${progress}%` }}
       />
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 bg-white/40 backdrop-blur-xl p-8 rounded-2xl shadow-xl">
         {/* breadcrumb */}
         <div className="text-sm text-muted-foreground mb-8">
@@ -223,7 +224,7 @@ const NoticiasPage = () => {
           </div>
         </div>
       </div>
-      const shareUrl = `${window.location.origin}/share/${noticia.slug}.html`;
+
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <Button
           size="icon"
