@@ -1,10 +1,10 @@
 import fs from "fs";
 import path from "path";
-import { noticias } from "../src/data/noticias";
 
 const DOMAIN = "https://sertaomaker.com.br";
 
 const outputDir = path.resolve("public/share");
+const jsonPath = path.resolve("src/data/noticias.share.json");
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
@@ -22,20 +22,15 @@ const sanitize = (text: string) => {
 const buildPublicUrl = (src: string) => {
   if (!src) return "";
 
-  // se já for link absoluto
   if (src.startsWith("http")) return src;
-
-  // se for caminho local tipo "/news/arquivo.png"
-  // garante que sempre vai ficar https://dominio + /news/arquivo.png
   if (src.startsWith("/")) return `${DOMAIN}${src}`;
 
-  // se vier sem barra (ex: "news/arquivo.png")
   return `${DOMAIN}/${src}`;
 };
 
-Object.values(noticias).forEach((noticia: any) => {
-  if (!noticia.slug) return;
+const noticiasShare = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
 
+noticiasShare.forEach((noticia: any) => {
   const slug = noticia.slug;
 
   const title = sanitize(noticia.title);

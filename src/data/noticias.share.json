@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "centelha",
+    "title": "Edital Aberto: Programa Centelha",
+    "description": "O Programa Centelha apoia inovadores com capacitações, recursos e suporte para transformar ideias em startups.",
+    "hero": "/news/centelha.png"
+  },
+  {
+    "slug": "inova-caatinga",
+    "title": "Edital Aberto: Inova Caatinga",
+    "description": "O Inova Caatinga incentiva soluções sustentáveis e inovadoras para fortalecer o bioma e gerar desenvolvimento regional.",
+    "hero": "/news/sebraeStartups.png"
+  },
+  {
+    "slug": "compet-solucoes",
+    "title": "Edital Aberto: Compet Soluções",
+    "description": "O Compet Soluções apoia empresas e startups com investimento e suporte para desenvolver projetos inovadores em Pernambuco.",
+    "hero": "/news/Compet-Soluções.png"
+  },
+  {
+    "slug": "desafios-sociais",
+    "title": "Edital Inovação Aberta para Desafios Sociais",
+    "description": "Edital de inovação aberta que busca soluções para desafios sociais em Pernambuco, conectando startups e instituições.",
+    "hero": "/news/desafiosSociais.jpeg"
+  },
+  {
+    "slug": "mulheres-que-inovam",
+    "title": "Edital Pró-Startups: Mulheres que Inovam",
+    "description": "Programa que fortalece o empreendedorismo feminino e apoia startups lideradas por mulheres no ecossistema de inovação.",
+    "hero": "/news/mulheres-que-inovam.jpeg"
+  },
+  {
+    "slug": "pernambucanas-inovadoras",
+    "title": "Edital Pernambucanas Inovadoras",
+    "description": "Edital que apoia projetos liderados por mulheres pesquisadoras, fortalecendo ciência, tecnologia e inovação em Pernambuco.",
+    "hero": "/news/pernambucanas-inovadoras.jpeg"
+  }
+]
