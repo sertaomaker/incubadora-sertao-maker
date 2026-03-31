@@ -35,7 +35,7 @@ const NoticiasPage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const shareUrl = `${window.location.origin}/share/${noticia.slug}.html`;
+  const shareUrl = `https://sertaomaker.com.br/share/${noticia.slug}.html`;
   if (!noticia) {
     return (
       <div className="text-center py-32 text-muted-foreground">
