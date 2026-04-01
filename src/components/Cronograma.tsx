@@ -7,28 +7,28 @@ const cronograma = [
     items: [
       {
         titulo: "Período de inscrições",
-        inicio: "25/03/2026",
-        termino: "10/04/2026",
+        inicio: "01/04/2026",
+        termino: "17/04/2026",
       },
       {
         titulo: "Avaliação e seleção",
-        inicio: "15/04/2026",
-        termino: "25/04/2026",
-      },
-      {
-        titulo: "Divulgação do resultado preliminar",
-        inicio: "27/04/2026",
-        termino: "27/04/2026",
-      },
-      {
-        titulo: "Prazo de recursos",
-        inicio: "28/04/2026",
+        inicio: "23/04/2026",
         termino: "29/04/2026",
       },
       {
-        titulo: "Divulgação do resultado final",
+        titulo: "Divulgação do resultado preliminar",
+        inicio: "30/04/2026",
+        termino: "30/04/2026",
+      },
+      {
+        titulo: "Prazo de recursos",
         inicio: "01/05/2026",
-        termino: "01/05/2026",
+        termino: "03/05/2026",
+      },
+      {
+        titulo: "Divulgação do resultado final",
+        inicio: "04/05/2026",
+        termino: "04/05/2026",
       },
     ],
   },
