@@ -13,13 +13,18 @@ import ProgramHighlightsSection from "@/components/ProgramBenefitsSection";
 import ProgramBenefitsSection from "@/components/ProgramBenefitsSection";
 import Cronograma from "@/components/Cronograma";
 
+//Templates
+import HeroSectionPreIncubacao from "@/components/templates/HeroSectionPreIncubacao";
+import ProgramBenefitsSectionPreIncubacao from "@/components/templates/ProgramBenefitsSectionPreIncubacao";
+
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection />
+      <HeroSectionPreIncubacao /> {/* Pré Icubação*/}
+      <ProgramBenefitsSectionPreIncubacao /> {/* Pré Icubação*/}
       <Cronograma />
-      <ProgramBenefitsSection />
+      {/*<ProgramBenefitsSection />*/}
       <AboutSection />
       <ProcessSection />
       <ProgramsSection />

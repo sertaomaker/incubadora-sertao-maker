@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { FileText, PenTool, CheckCircle } from "lucide-react";
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 
 import heroBanner from "@/assets/hero-banner.jpg";
 
 import AudioPlayer from "@/components/players/AudioPlayer";
-import { Link } from "react-router-dom"; // ✅ ADICIONADO
+import { Link } from "react-router-dom"; 
 
-const HeroSection = () => {
+const HeroSectionPreIncubacao = () => {
   return (
     <section
       id="inicio"
@@ -126,4 +126,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSectionPreIncubacao;
