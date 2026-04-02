@@ -63,11 +63,7 @@ const destaques = [
     title: "Captação na Prática",
     description: "Experiência real em estruturação e submissão de propostas.",
   },
-  {
-    icon: Globe,
-    title: "Incubação Internacional",
-    description: "Incubação cruzada com incubadora parceira da Europa.",
-  },
+  
 ];
 
 const ProgramBenefitsSectionPreIncubacao = () => {
@@ -120,7 +116,7 @@ const ProgramBenefitsSectionPreIncubacao = () => {
             Destaques do Programa
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {destaques.map((item, index) => (
               <Card
                 key={index}
