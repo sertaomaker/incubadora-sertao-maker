@@ -130,11 +130,6 @@ export const noticias = {
         text: "O edital de Inovação Aberta para Desafios Sociais busca incentivar a criação de soluções inovadoras para problemas sociais relevantes em Pernambuco.",
       },
       {
-        type: "image",
-        src: desafiosSociaisHero,
-        caption: "Programa busca soluções inovadoras para desafios sociais.",
-      },
-      {
         type: "paragraph",
         text: "A iniciativa promove a colaboração entre startups e instituições de ciência e tecnologia, criando um ambiente de cooperação para o desenvolvimento de soluções de impacto.",
       },
