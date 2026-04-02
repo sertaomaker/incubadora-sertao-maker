@@ -44,7 +44,7 @@ const cronograma = [
       {
         titulo: "Demoday de apresentação das soluções",
         inicio: "14/07/2026",
-        termino: "14/07/2026",
+        termino: "14/07/2026 ",
       },
     ],
   },
