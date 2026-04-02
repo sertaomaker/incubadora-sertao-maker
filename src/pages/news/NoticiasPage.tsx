@@ -230,7 +230,7 @@ const NoticiasPage = () => {
           className="bg-[#25D366] hover:bg-[#1ebe5d] text-white shadow-lg"
           onClick={() =>
             window.open(`https://wa.me/?text=${encodeURIComponent(shareUrl)}`)
-          }
+          } 
         >
           <FaWhatsapp className="w-5 h-5" />
         </Button>

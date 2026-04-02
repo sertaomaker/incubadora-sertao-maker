@@ -12,13 +12,12 @@ import workshopInovacaoImage from "@/assets/news/workshop-inovacao.jpg";
 import agtechStartupImage from "@/assets/news/agtech-startup.jpg";
 import edtechPlatformImage from "@/assets/news/edtech-platform.jpg";
 
-import mulheresQueInovam from "@/assets/news/mulheres-que-inovam.jpeg"
-import pernambucanasInovadoras from "@/assets/news/pernambucanas-inovadoras.jpeg"
+import mulheresQueInovam from "@/assets/news/mulheres-que-inovam.jpeg";
+import pernambucanasInovadoras from "@/assets/news/pernambucanas-inovadoras.jpeg";
 import centelha from "@/assets/news/centelha.png";
-import  sebraeStartups from "@/assets/news/sebraeStartups.png"
-import competSolucoes from "@/assets/news/Compet-Soluções.png"
-import desafiosSociais from "@/assets/news/desafiosSociais.jpeg"
-
+import sebraeStartups from "@/assets/news/sebraeStartups.png";
+import competSolucoes from "@/assets/news/Compet-Soluções.png";
+import desafiosSociais from "@/assets/news/desafiosSociais.jpeg";
 
 const NewsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("todas");
@@ -28,100 +27,125 @@ const NewsSection = () => {
       slug: "centelha",
       type: "processo",
       title: "Edital Aberto: Centelha",
-      excerpt: "O Programa Centelha apoia inovadores com capacitações, recursos e suporte para transformar ideias em negócios.",
+      excerpt:
+        "O Programa Centelha apoia inovadores com capacitações, recursos e suporte para transformar ideias em negócios.",
       date: "Até 15 Dez",
       readTime: "10 min",
       category: "Editais",
       image: centelha,
-      link: "src/pages/news/NoticiaCentelha.tsx"
+      link: "src/pages/news/NoticiaCentelha.tsx",
     },
     {
-      slug:"inova-caatinga",
+      slug: "inova-caatinga",
       type: "processo",
       title: "Edital Aberto: Inova Caatinga",
-      excerpt: "O Inova Caatinga é um programa que acelera projetos de bioeconomia, buscando soluções sustentáveis para o bioma.",
+      excerpt:
+        "O Inova Caatinga é um programa que acelera projetos de bioeconomia, buscando soluções sustentáveis para o bioma.",
       date: "Até 07 Dez",
       readTime: "10 min",
       category: "Editais",
       image: sebraeStartups,
-      link: "https://programas.sebraestartups.com.br/in/inovacaatinga"
+      link: "https://programas.sebraestartups.com.br/in/inovacaatinga",
     },
     {
-      slug:"compet-solucoes",
+      slug: "compet-solucoes",
       type: "processo",
       title: "Edital Aberto: Compet Soluções",
-      excerpt: "Governo lança nova edição de R$ 2,24 milhões para apoiar empresas em projetos inovadores",
+      excerpt:
+        "Governo lança nova edição de R$ 2,24 milhões para apoiar empresas em projetos inovadores",
       date: "Até 26 Jan",
       readTime: "10 min",
       category: "Editais",
       image: competSolucoes,
-      link: "https://www.facepe.br/compet-solucoes-governo-lanca-nova-edicao-de-r-224-milhoes-para-apoiar-empresas-em-projetos-inovadores/"
+      link: "https://www.facepe.br/compet-solucoes-governo-lanca-nova-edicao-de-r-224-milhoes-para-apoiar-empresas-em-projetos-inovadores/",
     },
     {
-      slug:"desafios-sociais",
+      slug: "desafios-sociais",
       type: "processo",
       title: "Edital Aberto: Inovação Aberta para Desafios Sociais",
-      excerpt: "A iniciativa de PE apoia startups com projetos inovadores em colaboração com ICTs, visando soluções sociais em Pernambuco.",
+      excerpt:
+        "A iniciativa de PE apoia startups com projetos inovadores em colaboração com ICTs, visando soluções sociais em Pernambuco.",
       date: "Até 22 Dez",
       readTime: "15 min",
       category: "Editais",
       image: desafiosSociais,
-      link: "https://www.facepe.br/facepe-prorroga-o-prazo-de-submissoes-do-edital-332025-inovacao-aberta-para-desafios-sociais/"
+      link: "https://www.facepe.br/facepe-prorroga-o-prazo-de-submissoes-do-edital-332025-inovacao-aberta-para-desafios-sociais/",
     },
     {
-      slug:"mulheres-que-inovam",
+      slug: "mulheres-que-inovam",
       type: "processo",
-      title: "Edital Pró-Startups: Mulheres que Inovam incentiva empreendedorismo feminino em Pernambuco",
-      excerpt: "Iniciativa voltada a empreendedoras representantes de startups pernambucanas interessadas em desenvolver soluções inovadoras.",
+      title:
+        "Edital Pró-Startups: Mulheres que Inovam incentiva empreendedorismo feminino em Pernambuco",
+      excerpt:
+        "Iniciativa voltada a empreendedoras representantes de startups pernambucanas interessadas em desenvolver soluções inovadoras.",
       date: "Até 27 Abr",
       readTime: "10 min",
       category: "Editais",
       image: mulheresQueInovam,
-      link: "https://www.facepe.br/governo-de-pernambuco-lanca-edital-pro-startups-mulheres-que-inovam-e-fortalece-a-lideranca-feminina-no-estado/"
+      link: "https://www.facepe.br/governo-de-pernambuco-lanca-edital-pro-startups-mulheres-que-inovam-e-fortalece-a-lideranca-feminina-no-estado/",
     },
     {
-      slug:"pernambucanas-inovadoras",
+      slug: "pernambucanas-inovadoras",
       type: "processo",
-      title: "Edital Pernambucanas Inovadoras fortalece protagonismo feminino na ciência e inovação",
-      excerpt: "Apoio a pesquisas de mulheres pernambucanas para criar soluções inovadoras e promover a equidade de gênero no setor.",
+      title:
+        "Edital Pernambucanas Inovadoras fortalece protagonismo feminino na ciência e inovação",
+      excerpt:
+        "Apoio a pesquisas de mulheres pernambucanas para criar soluções inovadoras e promover a equidade de gênero no setor.",
       date: "Até 11 Mai",
       readTime: "10 min",
       category: "Editais",
       image: pernambucanasInovadoras,
-      link: "https://www.facepe.br/edital-pernambucanas-inovadoras-r-21-milhoes-para-projetos-liderados-por-mulheres-pesquisadoras/"
+      link: "https://www.facepe.br/edital-pernambucanas-inovadoras-r-21-milhoes-para-projetos-liderados-por-mulheres-pesquisadoras/",
     },
   ];
 
   const categories = ["todas", "Parcerias", "Eventos", "Editais", "Capacitação", "Investimentos", "Tecnologia"];
 
-  const filteredNews = selectedCategory === "todas" 
-    ? news 
-    : news.filter(item => item.category === selectedCategory);
+  // ✅ FILTRA E INVERTE A ORDEM (última notícia aparece primeiro)
+  const filteredNews = (
+    selectedCategory === "todas"
+      ? news
+      : news.filter((item) => item.category === selectedCategory)
+  )
+    .slice()
+    .reverse();
 
   const getTypeIcon = (type: string) => {
     switch (type) {
-      case "noticia": return <Megaphone className="w-5 h-5" />;
-      case "evento": return <Users className="w-5 h-5" />;
-      case "processo": return <Calendar className="w-5 h-5" />;
-      default: return <Calendar className="w-5 h-5" />;
+      case "noticia":
+        return <Megaphone className="w-5 h-5" />;
+      case "evento":
+        return <Users className="w-5 h-5" />;
+      case "processo":
+        return <Calendar className="w-5 h-5" />;
+      default:
+        return <Calendar className="w-5 h-5" />;
     }
   };
 
   const getTypeColor = (type: string) => {
     switch (type) {
-      case "noticia": return "bg-sertao-green/20 text-sertao-green border-sertao-green/30";
-      case "evento": return "bg-sertao-blue/20 text-sertao-blue border-sertao-blue/30";
-      case "processo": return "bg-sertao-earth/20 text-sertao-earth border-sertao-earth/30";
-      default: return "bg-muted text-muted-foreground";
+      case "noticia":
+        return "bg-sertao-green/20 text-sertao-green border-sertao-green/30";
+      case "evento":
+        return "bg-sertao-blue/20 text-sertao-blue border-sertao-blue/30";
+      case "processo":
+        return "bg-sertao-earth/20 text-sertao-earth border-sertao-earth/30";
+      default:
+        return "bg-muted text-muted-foreground";
     }
   };
 
   const getTypeLabel = (type: string) => {
     switch (type) {
-      case "noticia": return "Notícia";
-      case "evento": return "Evento";
-      case "processo": return "Edital";
-      default: return type;
+      case "noticia":
+        return "Notícia";
+      case "evento":
+        return "Evento";
+      case "processo":
+        return "Edital";
+      default:
+        return type;
     }
   };
 
@@ -159,20 +183,23 @@ const NewsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredNews.map((item, index) => (
-            <Card key={index} className="overflow-hidden bg-background border-border/50 hover:shadow-soft transition-all  duration-300 group">
+          {filteredNews.map((item) => (
+            <Card
+              key={item.slug} // ✅ key correta
+              className="overflow-hidden bg-background border-border/50 hover:shadow-soft transition-all duration-300 group"
+            >
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={item.image} 
+                <img
+                  src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              
+
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <Badge 
-                    variant="outline" 
+                  <Badge
+                    variant="outline"
                     className={`${getTypeColor(item.type)} flex items-center gap-1`}
                   >
                     {getTypeIcon(item.type)}
@@ -202,7 +229,6 @@ const NewsSection = () => {
                   </div>
                 </div>
 
-                {/* Botão com link único */}
                 <Link
                   to={`/noticia/${item.slug}`}
                   className="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium rounded-md border border-transparent bg-background text-foreground hover:bg-primary/10 hover:text-primary transition-all duration-300"
