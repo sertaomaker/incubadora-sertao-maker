@@ -16,6 +16,11 @@ import Cronograma from "@/components/Cronograma";
 //Templates
 import HeroSectionPreIncubacao from "@/components/templates/HeroSectionPreIncubacao";
 import ProgramBenefitsSectionPreIncubacao from "@/components/templates/ProgramBenefitsSectionPreIncubacao";
+import ProcessSectionPreIncubacao from "@/components/templates/ProcessSectionPreIncubacao";
+
+
+
+
 
 const Index = () => {
   return (
@@ -26,7 +31,8 @@ const Index = () => {
       <Cronograma />
       {/*<ProgramBenefitsSection />*/}
       <AboutSection />
-      <ProcessSection />
+      <ProcessSectionPreIncubacao/>
+      <ProcessSection /> {/*Pré incubação*/}
       <ProgramsSection />
       <StartupsSection />
       {/*<ProgramHistory />*/}
