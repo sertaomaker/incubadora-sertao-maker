@@ -32,7 +32,7 @@ const Index = () => {
       {/*<ProgramBenefitsSection />*/}
       <AboutSection />
       <ProcessSectionPreIncubacao/>
-      <ProcessSection /> {/*Pré incubação*/}
+      {/*<ProcessSection /> Pré incubação*/}
       <ProgramsSection />
       <StartupsSection />
       {/*<ProgramHistory />*/}
