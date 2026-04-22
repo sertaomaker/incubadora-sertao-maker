@@ -8,27 +8,27 @@ const cronograma = [
       {
         titulo: "Período de inscrições",
         inicio: "01/04/2026",
-        termino: "17/04/2026",
+        termino: "26/04/2026",
       },
       {
         titulo: "Avaliação e seleção",
-        inicio: "23/04/2026",
-        termino: "29/04/2026",
+        inicio: "27/04/2026",
+        termino: "01/05/2026",
       },
       {
         titulo: "Divulgação do resultado preliminar",
-        inicio: "30/04/2026",
-        termino: "30/04/2026",
+        inicio: "02/05/2026",
+        termino: "02/05/2026",
       },
       {
         titulo: "Prazo de recursos",
-        inicio: "01/05/2026",
-        termino: "03/05/2026",
+        inicio: "03/05/2026",
+        termino: "04/05/2026",
       },
       {
         titulo: "Divulgação do resultado final",
-        inicio: "04/05/2026",
-        termino: "04/05/2026",
+        inicio: "05/05/2026",
+        termino: "05/05/2026",
       },
     ],
   },
@@ -38,7 +38,7 @@ const cronograma = [
     items: [
       {
         titulo: "Atividades de capacitação empreendedora e mentorias",
-        inicio: "06/05/2026",
+        inicio: "08/05/2026",
         termino: "08/07/2026",
       },
       {
@@ -57,7 +57,7 @@ export default function Cronograma() {
         {/* TÍTULO */}
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Cronograma do Programa
+            Cronograma do Programa de Pré-Incubação
           </h2>
           <p className="text-lg text-muted-foreground">
             Confira todas as etapas e datas importantes do edital
