@@ -18,11 +18,6 @@ const beneficios = [
     description: "Até 5 mil dólares em créditos para infraestrutura em nuvem.",
   },
   {
-    icon: Star,
-    title: "Crédito Zoho",
-    description: "Até 30 mil reais em ferramentas de gestão e produtividade.",
-  },
-  {
     icon: Handshake,
     title: "Mentorias",
     description: "Acompanhamento com especialistas em negócios e tecnologia.",
