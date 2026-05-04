@@ -18,6 +18,7 @@ import HeroSectionPreIncubacao from "@/components/templates/HeroSectionPreIncuba
 import ProgramBenefitsSectionPreIncubacao from "@/components/templates/ProgramBenefitsSectionPreIncubacao";
 import ProcessSectionPreIncubacao from "@/components/templates/ProcessSectionPreIncubacao";
 import FAQPreIncubacao from "@/components/templates/FAQPreIncubacao";
+import HeroSectionPreIncubacaoResult from "@/components/templates/HeroSectionPreIncubacaoResult";
 
 
 
@@ -26,7 +27,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSectionPreIncubacao /> {/* Pré Icubação*/}
+      <HeroSectionPreIncubacaoResult /> {/* Resultado do Edital n.º 45/2026*/}
+      {/* <HeroSectionPreIncubacao /> Pré Icubação*/}
       <ProgramBenefitsSectionPreIncubacao /> {/* Pré Icubação*/}
       <Cronograma />
       {/*<ProgramBenefitsSection />*/}

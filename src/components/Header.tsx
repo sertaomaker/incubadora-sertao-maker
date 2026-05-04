@@ -12,7 +12,6 @@ const Header = () => {
     { label: "Sobre", href: "#sobre" },
     { label: "Como funciona", href: "#como-funciona" },
     { label: "Programas", href: "#programas" },
-    { label: "Startups", href: "#startups" },
     { label: "FAQ", href: "#FAQ" },
     { label: "Notícias", href: "#noticias" },
     {

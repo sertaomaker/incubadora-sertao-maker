@@ -1,0 +1,122 @@
+import { Button } from "@/components/ui/button";
+import { FileText, PenTool, CheckCircle } from "lucide-react";
+import { Card } from "../ui/card";
+
+import heroBanner from "@/assets/hero-banner.jpg";
+
+import AudioPlayer from "@/components/players/AudioPlayer";
+import { Link } from "react-router-dom";
+
+const HeroSectionPreIncubacao = () => {
+  return (
+    <section
+      id="inicio"
+      className="relative flex flex-col items-center justify-center overflow-hidden"
+    >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroBanner}
+          alt="Sertão brasileiro com elementos de inovação"
+          className="w-full h-full object-cover"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-black/40"></div>
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+        <div className="max-w-3xl mx-auto mb-8">
+          <h1
+            className="
+    text-2xl
+    sm:text-4xl
+    lg:text-5xl
+    font-bold
+    text-white
+    mb-4
+    mt-10
+    leading-snug
+  "
+          >
+            Transformando ideias em protótipos no coração do Sertão
+          </h1>
+
+          <p
+            className="
+    text-base
+    sm:text-lg
+    text-white
+    mt-8
+    mb-10
+    leading-relaxed
+    drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]
+  "
+          >
+            O <strong>Sertão Maker</strong> é uma incubadora que apoia startups
+            e projetos inovadores desde a ideia até a prototipação e entrada no
+            mercado. Estão abertas as inscrições para o novo edital da
+            Incubadora Sertão Maker, com mentoria, infraestrutura e apoio ao
+            desenvolvimento de startups inovadoras.
+          </p>
+
+          <p
+            className="
+    text-sm
+    sm:text-base
+    text-white/90
+    mb-6
+    drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]
+  "
+          ></p>
+        </div>
+
+        {/* Announcement Box */}
+        <div className="mb-6 flex justify-center px-4">
+          <div className="max-w-2xl rounded-2xl bg-white/70 backdrop-blur-md border border-orange-400/40 ring-2 ring-orange-400/50 px-6 sm:px-8 py-6 shadow-lg">
+            <p className="text-center text-lg sm:text-xl font-bold text-orange-700">
+              Resultado preliminar disponível
+            </p>
+
+            <p className="mt-3 text-center text-base sm:text-lg text-gray-700 leading-relaxed">
+              Já está disponível o resultado preliminar do
+              <span className="font-semibold text-primary">
+                {" "}
+                Edital n.º 45/2026{" "}
+              – Processo de seleção para o Programa de Pré-Incubação Sertão
+              Inovador.
+              </span>
+              <br />
+              Confira a lista, veja sua classificação e fique atento aos prazos
+              para recursos e às próximas etapas.
+            </p>
+
+            <div className="mt-4 flex justify-center"></div>
+          </div>
+        </div>
+
+        {/* CTA Buttons */}
+
+        <div className="flex flex-col sm:flex-row gap-4 mb-10 mt-10 justify-center items-center">
+          <Button
+            size="lg"
+            variant="hero"
+            className="bg-white/20 text-green-500 border border-white-600 hover:bg-green-500 hover:border-none hover:text-white flex items-center gap-2"
+            onClick={() =>
+              window.open(
+                "https://ifsertaope.edu.br/wp-content/uploads/2026/05/Resultado_Preliminar.pdf",
+                "_blank",
+              )
+            }
+          >
+            <FileText className="h-5 w-5" />
+            Confira aqui 
+          </Button>
+          
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSectionPreIncubacao;
