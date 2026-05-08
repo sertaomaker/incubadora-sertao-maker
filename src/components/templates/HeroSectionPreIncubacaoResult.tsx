@@ -75,11 +75,11 @@ const HeroSectionPreIncubacao = () => {
         <div className="mb-6 flex justify-center px-4">
           <div className="max-w-2xl rounded-2xl bg-white/70 backdrop-blur-md border border-orange-400/40 ring-2 ring-orange-400/50 px-6 sm:px-8 py-6 shadow-lg">
             <p className="text-center text-lg sm:text-xl font-bold text-orange-700">
-              Resultado preliminar disponível
+              Resultado final disponível
             </p>
 
             <p className="mt-3 text-center text-base sm:text-lg text-gray-700 leading-relaxed">
-              Já está disponível o resultado preliminar do
+              Já está disponível o resultado final do
               <span className="font-semibold text-primary">
                 {" "}
                 Edital n.º 45/2026{" "}
@@ -87,14 +87,13 @@ const HeroSectionPreIncubacao = () => {
               Inovador.
               </span>
               <br />
-              Confira a lista, veja sua classificação e fique atento aos prazos
-              para recursos e às próximas etapas.
+              Confira a lista final e acompanhe as próximas orientações para as
+              etapas seguintes.
             </p>
 
             <div className="mt-4 flex justify-center"></div>
           </div>
         </div>
-
         {/* CTA Buttons */}
 
         <div className="flex flex-col sm:flex-row gap-4 mb-10 mt-10 justify-center items-center">
@@ -104,15 +103,14 @@ const HeroSectionPreIncubacao = () => {
             className="bg-white/20 text-green-500 border border-white-600 hover:bg-green-500 hover:border-none hover:text-white flex items-center gap-2"
             onClick={() =>
               window.open(
-                "https://ifsertaope.edu.br/wp-content/uploads/2026/05/Resultado_Preliminar.pdf",
+                "https://ifsertaope.edu.br/wp-content/uploads/2026/05/Resultado_final_2026.1.pdf",
                 "_blank",
               )
             }
           >
             <FileText className="h-5 w-5" />
-            Confira aqui 
+            Confira aqui
           </Button>
-          
         </div>
       </div>
     </section>
