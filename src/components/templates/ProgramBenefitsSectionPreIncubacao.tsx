@@ -36,7 +36,7 @@ const beneficios = [
     icon: Globe,
     title: "Formação Técnica",
     description:
-      "Cursos Cisco, Huawei, PUC-Rio (Programação, IA e outras áreas).",
+      "Cursos Cisco, Huawei (Programação, IA e outras áreas).",
   },
 ];
 
@@ -58,7 +58,7 @@ const destaques = [
     title: "Captação na Prática",
     description: "Experiência real em estruturação e submissão de propostas.",
   },
-  
+
 ];
 
 const ProgramBenefitsSectionPreIncubacao = () => {
@@ -89,8 +89,8 @@ const ProgramBenefitsSectionPreIncubacao = () => {
                 key={index}
                 className="p-6 text-center bg-gradient-card border-border/50 hover:shadow-soft transition-all duration-300"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 bg-[#7b1212]/15 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-7 h-7 text-[#7b1212]" />
                 </div>
 
                 <h3 className="text-lg font-semibold text-foreground mb-2">
@@ -117,8 +117,8 @@ const ProgramBenefitsSectionPreIncubacao = () => {
                 key={index}
                 className="p-6 text-center bg-gradient-card border-border/50 hover:shadow-soft transition-all duration-300"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 bg-[#7b1212]/15 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-7 h-7 text-[#7b1212]" />
                 </div>
 
                 <h3 className="text-lg font-semibold text-foreground mb-2">
@@ -140,10 +140,10 @@ const ProgramBenefitsSectionPreIncubacao = () => {
 
           {/* Videos */}
           <section className="flex justify-center max-w-2xl mx-auto mt-10 px-4">
-            
-              {/* Video 1 */}
-              <VideoPlayer src="0lvDblBpUcQ" type="youtube" />
-        
+
+            {/* Video 1 */}
+            <VideoPlayer src="0lvDblBpUcQ" type="youtube" />
+
           </section>
         </div>
       </div>

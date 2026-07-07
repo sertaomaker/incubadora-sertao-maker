@@ -72,8 +72,8 @@ export default function Cronograma() {
             <div key={index} className="space-y-6">
               {/* HEADER DA ETAPA */}
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center shadow-soft">
-                  <Icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 rounded-2xl bg-red-100 flex items-center justify-center shadow-soft">
+                  <Icon className="w-7 h-7 text-[#7b1212]" />
                 </div>
 
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground">
@@ -89,7 +89,7 @@ export default function Cronograma() {
                     className="relative bg-white rounded-2xl shadow-md border border-border/40 overflow-hidden hover:shadow-xl transition-all duration-300"
                   >
                     {/* BARRA TOPO */}
-                    <div className="h-2 bg-gradient-to-r from-primary to-primary" />
+                    <div className="h-2 bg-gradient-to-r from-[#7b1212] to-rose-800" />
 
                     <div className="p-6">
                       {/* TÍTULO */}
@@ -98,9 +98,9 @@ export default function Cronograma() {
                       </h4>
 
                       {/* INÍCIO */}
-                      <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-blue-50 border border-blue-200 mb-3">
-                        <CalendarDays className="w-4 h-4 text-primary" />
-                        <span className="text-sm text-primary font-medium">
+                      <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-red-50 border border-red-200 mb-3">
+                        <CalendarDays className="w-4 h-4 text-[#7b1212]" />
+                        <span className="text-sm text-[#7b1212] font-medium">
                           Início:{" "}
                           <span className="font-semibold text-foreground">
                             {item.inicio}

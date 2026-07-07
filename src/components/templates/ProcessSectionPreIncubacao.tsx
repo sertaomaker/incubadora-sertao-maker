@@ -7,43 +7,43 @@ const ProcessSectionPreIncubacao = () => {
       icon: AlertCircle,
       title: "Identificação do Problema",
       description: "Mapeamento de dores e necessidades do mercado para definir desafios relevantes.",
-      color: "text-sertao-blue"
+      color: "text-[#7b1212]"
     },
     {
       icon: Users,
       title: "Identificação segmento de clientes",
       description: "Definição do público-alvo e segmentação para entender quem será impactado.",
-      color: "text-sertao-blue"
+      color: "text-[#7b1212]"
     },
     {
       icon: CheckCircle,
       title: "Validação Problema e Cliente",
       description: "Testes e entrevistas para validar se o problema existe e se o cliente se identifica.",
-      color: "text-sertao-blue"
+      color: "text-[#7b1212]"
     },
     {
       icon: Lightbulb,
       title: "Ideação",
       description: "Geração de soluções inovadoras para os problemas validados.",
-      color: "text-sertao-blue"
+      color: "text-[#7b1212]"
     },
     {
       icon: Wrench,
       title: "Prototipação",
       description: "Desenvolvimento de protótipos ou MVPs para testar as ideias de forma prática.",
-      color: "text-sertao-blue"
+      color: "text-[#7b1212]"
     },
     {
       icon: Target,
       title: "Validação da Solução",
       description: "Testes com usuários e métricas para garantir que a solução atende ao problema.",
-      color: "text-sertao-blue"
+      color: "text-[#7b1212]"
     },
     {
       icon: Calendar,
       title: "Planejamento",
       description: "Organização de próximos passos e estratégia de crescimento da startup.",
-      color: "text-sertao-blue"
+      color: "text-[#7b1212]"
     }
   ];
 
@@ -69,9 +69,9 @@ const ProcessSectionPreIncubacao = () => {
                   <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-border transform translate-x-4 -translate-y-1/2 z-0"></div>
                 )}
                 
-                <Card className="relative z-10 p-6 text-center bg-background border-border/50 hover:shadow-soft transition-all duration-300 h-full flex flex-col">
+                <Card className="relative z-10 p-6 text-center bg-white border-border/50 hover:shadow-soft transition-all duration-300 h-full flex flex-col">
                   {/* Ícone */}
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 flex-shrink-0">
+                  <div className="w-16 h-16 bg-[#7b1212]/15 rounded-full flex items-center justify-center mx-auto mb-4 flex-shrink-0">
                     <step.icon className={`w-8 h-8 ${step.color}`} />
                   </div>
 
@@ -98,7 +98,7 @@ const ProcessSectionPreIncubacao = () => {
           <div className="mt-16 text-center">
             <div className="inline-flex items-center gap-4 bg-gradient-card rounded-2xl px-8 py-4 border border-border/50">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">2-3</div>
+                <div className="text-2xl font-bold text-[#7b1212]">2-3</div>
                 <div className="text-sm text-muted-foreground">Meses</div>
               </div>
               <div className="w-px h-12 bg-border"></div>

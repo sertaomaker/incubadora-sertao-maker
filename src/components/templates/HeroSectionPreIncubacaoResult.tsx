@@ -73,14 +73,14 @@ const HeroSectionPreIncubacao = () => {
 
         {/* Announcement Box */}
         <div className="mb-6 flex justify-center px-4">
-          <div className="max-w-2xl rounded-2xl bg-white/70 backdrop-blur-md border border-orange-400/40 ring-2 ring-orange-400/50 px-6 sm:px-8 py-6 shadow-lg">
-            <p className="text-center text-lg sm:text-xl font-bold text-orange-700">
+          <div className="max-w-2xl rounded-2xl bg-white/70 backdrop-blur-md border border-[#7b1212] ring-2 ring-[#7b1212] px-6 sm:px-8 py-6 shadow-lg">
+            <p className="text-center text-lg sm:text-xl font-bold text-[#7b1212]">
               Resultado final disponível
             </p>
 
             <p className="mt-3 text-center text-base sm:text-lg text-gray-700 leading-relaxed">
               Já está disponível o resultado final do
-              <span className="font-semibold text-primary">
+              <span className="font-semibold text-[#7b1212]">
                 {" "}
                 Edital n.º 45/2026{" "}
               – Processo de seleção para o Programa de Pré-Incubação Sertão

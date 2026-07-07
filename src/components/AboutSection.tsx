@@ -53,8 +53,8 @@ const AboutSection = () => {
               key={index}
               className="p-6 text-center bg-gradient-card border-border/50 hover:shadow-soft transition-all duration-300"
             >
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <feature.icon className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 bg-[#7b1212]/15 rounded-full flex items-center justify-center mx-auto mb-4">
+                <feature.icon className="w-8 h-8 text-[#7b1212]" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
                 {feature.title}
@@ -82,8 +82,8 @@ const AboutSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="p-6 text-center bg-gradient-card border-border/50">
-              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Lightbulb className="w-7 h-7 text-primary" />
+              <div className="w-14 h-14 bg-[#7b1212]/15 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Lightbulb className="w-7 h-7 text-[#7b1212]" />
               </div>
               <h4 className="text-lg font-semibold text-foreground mb-2">
                 Laboratório de IoT
@@ -95,8 +95,8 @@ const AboutSection = () => {
             </Card>
 
             <Card className="p-6 text-center bg-gradient-card border-border/50">
-              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-7 h-7 text-primary" />
+              <div className="w-14 h-14 bg-[#7b1212]/15 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="w-7 h-7 text-[#7b1212]" />
               </div>
               <h4 className="text-lg font-semibold text-foreground mb-2">
                 Impressoras 3D
@@ -108,8 +108,8 @@ const AboutSection = () => {
             </Card>
 
             <Card className="p-6 text-center bg-gradient-card border-border/50">
-              <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-7 h-7 text-primary" />
+              <div className="w-14 h-14 bg-[#7b1212]/15 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-7 h-7 text-[#7b1212]" />
               </div>
               <h4 className="text-lg font-semibold text-foreground mb-2">
                 Sala de Podcast

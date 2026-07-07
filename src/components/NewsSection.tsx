@@ -174,7 +174,14 @@ const NewsSection = () => {
                 variant={selectedCategory === category ? "default" : "outline"}
                 size="sm"
                 onClick={() => setSelectedCategory(category)}
-                className="capitalize"
+                className={`
+    capitalize transition-all duration-100
+    ${selectedCategory === category
+                    ? "bg-[#7b1212] text-white hover:bg-[#7b1212]"
+                    : "hover:bg-[#7b1212]/10 hover:text-[#7b1212] hover:border-[#7b1212]"
+                  }
+    focus-visible:ring-[#7b1212]
+  `}
               >
                 {category}
               </Button>
@@ -231,7 +238,7 @@ const NewsSection = () => {
 
                 <Link
                   to={`/noticia/${item.slug}`}
-                  className="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium rounded-md border border-transparent bg-background text-foreground hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  className="inline-flex justify-center items-center w-full px-4 py-2 text-sm font-medium rounded-md border border-transparent bg-background text-foreground hover:bg-[#7b1212]/15 hover:text-[#7b1212] transition-all duration-300"
                 >
                   Ler Mais
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

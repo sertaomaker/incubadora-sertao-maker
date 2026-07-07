@@ -116,17 +116,17 @@ const FaqSection = () => {
           {faqs.map((faq, index) => (
             <Card
               key={index}
-              className={`overflow-hidden transition-all duration-300 border-border/50
+              className={`overflow-hidden transition-all duration-300 border-[#7b1212]/50
     ${
       openIndex === index
-        ? "bg-gradient-card border-primary/40 shadow-soft"
-        : "bg-gradient-card hover:border-primary/30"
+        ? "bg-gradient-card border-[#7b1212]/40 shadow-soft"
+        : "bg-gradient-card hover:border-[#7b1212]/30"
     }`}
             >
               <button
                 onClick={() => toggle(index)}
                 className="w-full flex items-center justify-between p-6 text-left
-             hover:bg-primary/5 transition-colors"
+             hover:bg-[#7b1212]/5 transition-colors"
               >
                 <span className="text-lg font-semibold text-foreground">
                   {faq.question}
@@ -135,7 +135,7 @@ const FaqSection = () => {
                 <ChevronDown
                   className={`w-5 h-5 transition-all duration-300
     ${
-      openIndex === index ? "rotate-180 text-primary" : "text-muted-foreground"
+      openIndex === index ? "rotate-180 text-[#7b1212]" : "text-muted-foreground"
     }`}
                 />
               </button>

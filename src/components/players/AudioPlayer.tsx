@@ -83,7 +83,7 @@ export default function AudioPlayer({ src, title }: Props) {
       "
     >
       {title && (
-        <p className="text-primary text-center font-semibold text-sm mb-2">
+        <p className="text-[#7b1212] text-center font-semibold text-sm mb-2">
           {title}
         </p>
       )}
@@ -92,7 +92,7 @@ export default function AudioPlayer({ src, title }: Props) {
       <div>
         <div onClick={seek} className="h-2 rounded bg-muted/100 cursor-pointer">
           <div
-            className="h-2 rounded bg-primary"
+            className="h-2 rounded bg-[#7b1212]"
             style={{ width: `${progress}%` }}
           />
         </div>
@@ -111,7 +111,7 @@ export default function AudioPlayer({ src, title }: Props) {
           className="
       w-10 h-10
       rounded-full
-      bg-primary
+      bg-[#7b1212]
       text-primary-foreground
       flex items-center justify-center
       flex-shrink-0
@@ -127,7 +127,7 @@ export default function AudioPlayer({ src, title }: Props) {
      w-8 h-8
       flex items-center justify-center
       text-muted-foreground
-      hover:text-primary
+      hover:text-[#7b1212]
       transition-colors
     "
         >
@@ -141,7 +141,7 @@ export default function AudioPlayer({ src, title }: Props) {
       w-8 h-8
       flex items-center justify-center
       text-muted-foreground
-      hover:text-primary
+      hover:text-[#7b1212]
       transition-colors
     "
         >
@@ -156,7 +156,7 @@ export default function AudioPlayer({ src, title }: Props) {
         w-8 h-8
         flex items-center justify-center
         text-muted-foreground
-        hover:text-primary
+        hover:text-[#7b1212]
         transition-colors
       "
           >
@@ -176,7 +176,7 @@ export default function AudioPlayer({ src, title }: Props) {
         "
             >
               {" "}
-              <p className="text-primary text-sm font-semibold px-3">
+              <p className="text-[#7b1212] text-sm font-semibold px-3">
                 Velocidade
               </p>
               {speeds.map((s) => (
@@ -190,7 +190,7 @@ export default function AudioPlayer({ src, title }: Props) {
               block w-full px-3 py-1.5 text-xs text-left
               ${
                 speed === s
-                  ? "bg-primary text-primary-foreground"
+                  ? "bg-[#7b1212] text-primary-foreground"
                   : "hover:bg-muted"
               }
             `}

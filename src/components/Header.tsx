@@ -11,15 +11,8 @@ const Header = () => {
     { label: "Beneficios", href: "#beneficios" },
     { label: "Sobre", href: "#sobre" },
     { label: "Como funciona", href: "#como-funciona" },
-    { label: "Programas", href: "#programas" },
     { label: "FAQ", href: "#FAQ" },
-    { label: "Notícias", href: "#noticias" },
-    {
-      /* label: "Histórico", href: "#historico"*/
-    },
-    {
-      /* label: "Equipe", href: "#equipe" */
-    },
+    { label: "Notícias", href: "#noticias" }
   ];
 
   return (

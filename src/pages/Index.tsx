@@ -30,9 +30,9 @@ const Index = () => {
       <HeroSectionPreIncubacaoResult /> {/* Resultado do Edital n.º 45/2026*/}
       {/* <HeroSectionPreIncubacao /> Pré Icubação*/}
       <ProgramBenefitsSectionPreIncubacao /> {/* Pré Icubação*/}
-      <Cronograma />
+      {/*/<Cronograma />*/}
       {/*<ProgramBenefitsSection />*/}
-      <AboutSection />
+      <AboutSection /> 
       <ProcessSectionPreIncubacao/> {/*Pré incubação*/}
       {/*<ProcessSection />}
       <ProgramsSection />
@@ -40,7 +40,7 @@ const Index = () => {
       {/*<ProgramHistory />*/}
       {/*<TeamSection />*/}
       <FAQPreIncubacao/>
-      <FAQ />
+      {/*<FAQ />*/}
       <NewsSection />
       <Footer />
     </div>

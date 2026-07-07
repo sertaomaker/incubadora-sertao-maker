@@ -87,9 +87,9 @@ export default function VideoPlayer({
     <div
       className="w-full max-w-3xl mx-auto rounded-xl p-[3px]
                 bg-gradient-to-br
-                from-blue-900/90
-                to-indigo-950/90
-                via-slate-900/80
+                from-[#7b1212]
+                to-[#7b1212]
+                  via-slate-[#7b1212]
                 shadow-lg shadow-black/40"
     >
       <div className="bg-black rounded-xl overflow-hidden">
